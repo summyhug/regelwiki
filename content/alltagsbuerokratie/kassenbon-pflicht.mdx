@@ -1,0 +1,206 @@
+---
+title: "Kassenbon-Pflicht"
+subtitle: "Seit 2020 muss jeder Brötchenkauf einen Beleg erzeugen — ob jemand ihn will oder nicht"
+slug: kassenbon-pflicht
+domain: alltagsbuerokratie
+domain_label: "Alltagsbürokratie"
+type: zeitgeist-problem
+type_label: "Zeitgeist-Problem"
+
+# Jurisdiction
+jurisdiction: federal
+jurisdiction_label: "Bundesrecht (Abgabenordnung + KassenSichV)"
+legal_basis: "§ 146a AO (Abgabenordnung), KassenSichV (Kassensicherungsverordnung)"
+source_url: "https://www.gesetze-im-internet.de/ao_1977/__146a.html"
+applies_in: all
+local_variation: false
+
+# Who this affects
+affects:
+  - Einzelhändler, Bäckereien, Gastronomie, Marktstand-Betreiber
+  - Alle Unternehmen mit elektronischen Kassensystemen
+  - Verbraucher (mittelbar: Kosten, Papierflut)
+  - Umwelt (Thermopapier-Abfall)
+
+# Editorial classification
+trade_off_values:
+  side_a: "Steuerehrlichkeit · Kassenmanipulationsschutz · Prüfbarkeit"
+  side_b: "Verhältnismäßigkeit · Umweltschutz · Verwaltungsaufwand für Kleinbetriebe"
+trade_off_current_lean: a
+trade_off_note: >
+  Das Ziel — Kassenmanipulation verhindern — ist legitim und das technische
+  Kernelement (TSE-Chip) funktioniert dafür. Die Belegausgabepflicht ist
+  das Beiprodukt, das Milliarden Papierbelege erzeugt, die niemand braucht.
+
+# Key numbers
+key_numbers:
+  - label: "Kassenbelege ausgedruckt pro Jahr (Deutschland, Schätzung)"
+    value: "> 10 Milliarden"
+    source: "Handelsverband Deutschland (HDE) 2020"
+  - label: "Davon direkt weggeworfen (Schätzung)"
+    value: "ca. 70–80 %"
+    source: "WWF Deutschland / HDE-Umfrage 2020"
+  - label: "Thermopapier: enthält oft BPA/BPS (Weichmacher)"
+    value: "nicht recycelbar im Altpapier"
+    source: "Umweltbundesamt 2021"
+  - label: "Bußgeld bei Verstoß (pro Vorgang)"
+    value: "bis € 25.000"
+    source: "§ 379 AO"
+
+# Comparators
+comparators:
+  - country: SE
+    country_name: Schweden
+    summary: >
+      Schweden hat 2010 eine Kassenpflicht eingeführt — mit TSE-äquivalenter
+      Technologie, aber ohne Belegausgabepflicht. Der Fokus liegt auf
+      der manipulationssicheren Aufzeichnung und der Prüfbarkeit durch
+      Betriebsprüfer, nicht auf der Ausgabe von Papier. Digitale Belege
+      per App oder E-Mail sind gleichwertig.
+    source: "Skatteförfarandelagen (SFL) 2011:1244"
+  - country: IT
+    country_name: Italien
+    summary: >
+      Italien hat als eines der ersten europäischen Länder fiskalische
+      Kassensysteme (Registratori di Cassa Telematici) eingeführt, die
+      Transaktionen direkt an die Finanzbehörde übermitteln — in Echtzeit.
+      Der Beleg ist ein digitales Nebenprodukt, kein Hauptzweck.
+      Papierbelege existieren, sind aber nicht das primäre Prüfinstrument.
+    source: "Decreto Legislativo 127/2015, Agenzia delle Entrate"
+  - country: NL
+    country_name: Niederlande
+    summary: >
+      Die Niederlande haben keine generelle Kassenbonpflicht für Einzelhandel.
+      Stattdessen setzen sie auf risikobasierte Betriebsprüfungen und
+      digitale Buchführungspflichten. Wer einen Beleg will, bekommt einen —
+      aber der Unternehmer ist nicht verpflichtet, ihn unaufgefordert
+      auszudrucken.
+    source: "Wet op de omzetbelasting; Belastingdienst-Leitlinien"
+
+# Reform status
+reform_status: discussed
+reform_status_label: "Bundesfinanzministerium lehnte Ausnahmen ab; Debatte nie abgeschlossen"
+reform_proposals:
+  - "Belegausgabepflicht durch Opt-in ersetzen: Beleg auf Wunsch des Kunden, digital oder auf Papier — nicht als Standard-Ausdruck"
+  - "Digitale Belege gleichwertig: E-Mail-Beleg oder QR-Code auf Display erfüllt die Pflicht ohne Thermopapierverbrauch"
+  - "TSE-Aufzeichnung als ausreichend anerkennen: Das Sicherheitsziel — manipulationssichere Aufzeichnung — wird durch den TSE-Chip erreicht, nicht durch den Papierausdruck"
+  - "Ausnahme für Kleinbetriebe unter Umsatzschwelle: Marktstand, Bäckerei, Kiosk — verhältnismäßige Regelung statt Einheitspflicht"
+
+references:
+  - label: "§ 146a AO — Ordnungsvorschriften für die Buchführung mit Kassensystemen"
+    url: "https://www.gesetze-im-internet.de/ao_1977/__146a.html"
+    note: "Rechtsgrundlage für TSE-Pflicht und Belegausgabepflicht"
+  - label: "KassenSichV — Kassensicherungsverordnung"
+    url: "https://www.gesetze-im-internet.de/kassensichv/"
+    note: "Technische Anforderungen an Kassensysteme; TSE-Zertifizierungspflicht"
+  - label: "§ 379 AO — Bußgeldvorschriften"
+    url: "https://www.gesetze-im-internet.de/ao_1977/__379.html"
+    note: "Bis € 25.000 Bußgeld bei Verstoß gegen Aufzeichnungs- und Belegpflichten"
+  - label: "HDE — Handelsverband Deutschland: Stellungnahme Kassenbonpflicht 2020"
+    url: "https://www.hde.de/de/positionen/steuern-finanzen.html"
+    note: "Schätzung: > 10 Mrd. Kassenbelege/Jahr, 70–80 % sofort entsorgt"
+  - label: "Umweltbundesamt — Thermopapier und Recycling 2021"
+    url: "https://www.umweltbundesamt.de/themen/chemikalien/bisphenole"
+    note: "BPA/BPS in Thermopapier; Einschränkungen für Altpapierrecycling"
+  - label: "Skatteförfarandelagen (SFL) Schweden — Kassenpflicht ohne Belegzwang"
+    url: "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skatteforfarandelag-20111244_sfs-2011-1244/"
+    note: "Manipulationssichere Aufzeichnung als Ziel; Belegausgabe nicht zwingend analog"
+  - label: "Agenzia delle Entrate (Italien) — Registratori di Cassa Telematici"
+    url: "https://www.agenziaentrate.gov.it/portale/web/guest/registratori-di-cassa"
+    note: "Echtzeit-Übermittlung von Kassendaten an Finanzbehörde; digitales Primärinstrument"
+
+# Metadata
+tags:
+  - kassenbon
+  - steuern
+  - kassenführung
+  - umwelt
+  - thermopapier
+  - einzelhandel
+  - bürokratie
+last_reviewed: "2025-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Seit dem 1. Januar 2020 gilt in Deutschland: Wer ein elektronisches Kassensystem
+betreibt, muss jedem Kunden einen Kassenbeleg anbieten — unaufgefordert, bei
+jedem Vorgang, ohne Ausnahme.<Ref id={1} /> Der Bäcker muss für das Brötchen einen
+Bon ausdrucken. Der Marktstand für den Apfel. Die Kantine für den Kaffee.
+
+Ob der Kunde den Bon will, ist unerheblich. Ob er ihn nimmt, ist unerheblich.
+Ob er ihn sofort in den Mülleimer wirft, ist unerheblich. Die Pflicht gilt.
+
+Der Handelsverband Deutschland schätzt, dass in Deutschland jährlich mehr
+als 10 Milliarden Kassenbelege produziert werden.<Ref id={4} /> Rund 70 bis 80 %
+davon werden nach Schätzungen sofort entsorgt,<Ref id={4} /> viele ohne gelesen
+zu werden. Thermopapier — das Material der meisten Kassenbelege — enthält
+oft Bisphenol A oder S, ist deshalb nicht recycelbar im Altpapier<Ref id={5} />
+und landet im Restmüll.
+
+Das Bußgeld für Verstöße:<Ref id={3} /> bis zu 25.000 Euro pro Vorgang.
+
+## Warum es diese Pflicht gibt
+
+Das eigentliche Ziel der Regelung ist nicht der Bon. Es ist der TSE-Chip:
+die technische Sicherheitseinrichtung (TSE), die alle Kassenvorgänge
+manipulationssicher aufzeichnet und signiert.<Ref id={2} /> Damit soll
+verhindert werden, was jahrzehntelang gängige Praxis war: nachträgliche
+Manipulation von Kassendaten, um Umsätze kleinzurechnen und Steuern zu sparen.
+
+Das ist ein legitimes Problem. Kassenmanipulation ist in Deutschland
+nach Schätzung des Bundeszentralamts für Steuern ein relevanterSteuerschaden im Milliardenbereich. Die TSE-Lösung ist technisch sauber
+und adressiert das Problem direkt.
+
+Die Belegausgabepflicht ist ein Beiprodukt dieser Regelung — sie wurde
+als Kontrollmechanismus eingebaut, damit Kunden die Richtigkeit von
+Transaktionen prüfen können. In der Theorie ist das eine zusätzliche
+Kontrollebene. In der Praxis überprüft kaum jemand seinen Brötchen-Bon.
+
+## Die Abwägung
+
+Der TSE-Chip erfüllt den Hauptzweck: manipulationssichere Aufzeichnung,
+prüfbar durch den Fiskus bei Betriebsprüfungen. Das ist das Werkzeug,
+das Steuerhinterziehung verhindert.
+
+Der Papierbon erfüllt keinen Zweck, der nicht auch digital erfüllbar wäre.
+Schweden<Ref id={6} /> hat 2010 das gleiche Problem gelöst — mit kassenseitiger
+Aufzeichnungspflicht, aber ohne Papierausgabezwang. Italien<Ref id={7} /> schickt
+Kassendaten in Echtzeit ans Finanzamt. Die Kontrolllogik ist die gleiche;
+das Thermopapier fehlt.
+
+Das eigentliche Problem der Kassenbon-Pflicht ist Verhältnismäßigkeit:
+Die Regelung behandelt die Bäckerei mit drei Tagesabschlüssen und den
+Elektronikmarkt mit tausend Transaktionen gleich. Sie zwingt Betreiber
+von Marktständen, die in der Vergangenheit keine Kasse hatten, zu einer
+volldigitalen TSE-Infrastruktur — oder zum Bußgeldrisiko.
+
+Der Umweltschaden ist nicht hypothetisch. 10 Milliarden Belege aus
+nicht recycelbarem Thermopapier pro Jahr<Ref id={4} /> sind eine messbare
+ökologische Konsequenz einer Regelung, die diesen Nebeneffekt nie
+eingepreist hat.
+
+Das Bundesfinanzministerium hat Ausnahmeregelungen — etwa für Kleinbetriebe
+unter einer Umsatzschwelle — in der Einführungsdebatte abgelehnt.
+Das Argument: Ausnahmen schaffen neue Umgehungsmöglichkeiten.
+Das ist nicht falsch — aber es ignoriert, dass das eigentliche
+Sicherheitsziel durch die TSE-Aufzeichnung bereits erreicht wird.
+
+## Reformrichtung
+
+Das Kernziel — Kassenmanipulation verhindern — ist durch die TSE-Pflicht
+bereits erreicht. Was reformiert werden müsste:
+
+- **Bon auf Wunsch, nicht auf Zwang**: Opt-in statt Opt-out.
+  Wer einen Beleg möchte, bekommt einen — digital oder auf Papier.
+  Standard ist keine Ausgabe.
+- **Digitale Belege gleichstellen**: E-Mail-Beleg, QR-Code auf Display,
+  App-Integration — alles gleichwertig mit Papier. Das ist technisch
+  trivial und rechtlich nur eine Klarstellung notwendig.
+- **TSE-Aufzeichnung als ausreichend anerkennen**: Für die Steuerkontrolle
+  zählt die signierte Aufzeichnung im TSE-System — nicht das Papier
+  in der Hand des Kunden.
+- **Verhältnismäßigkeit für Kleinbetriebe**: Umsatzschwellen oder
+  Branchenausnahmen für Betriebe, bei denen das Manipulationsrisiko
+  strukturell gering und der Verwaltungsaufwand unverhältnismäßig hoch ist.

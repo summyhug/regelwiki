@@ -1,0 +1,219 @@
+---
+title: "Bürgeramt & Terminvergabe"
+subtitle: "Der Staat weiß, dass es nicht funktioniert — und hat trotzdem keine Lösung"
+slug: buergeramt-terminvergabe
+domain: alltagsbuerokratie
+domain_label: "Alltagsbürokratie"
+type: zeitgeist-problem
+type_label: "Zeitgeist-Problem"
+
+# Jurisdiction
+jurisdiction: municipal
+jurisdiction_label: "Kommunal (Vollzug durch Städte und Gemeinden)"
+legal_basis: >
+  OZG — Onlinezugangsgesetz (2017, Digitalisierungspflicht bis 2022),
+  Landesverwaltungsgesetze,
+  kommunale Satzungen zur Ämterorganisation
+source_url: "https://www.gesetze-im-internet.de/ozg/"
+applies_in: all
+local_variation: true
+local_variation_note: >
+  Wartezeiten und Digitalisierungsgrad variieren extrem: München und Hamburg
+  haben funktionierendere Online-Buchungssysteme als Berlin. Kleinere Städte
+  haben kürzere Wartezeiten, aber weniger digitale Angebote.
+  Kein einheitlicher nationaler Standard.
+
+# Who this affects
+affects:
+  - Alle Einwohner (Anmeldung, Personalausweis, Führerschein, Reisepass)
+  - Neu Zugezogene und Einwanderer besonders stark
+  - Gewerbetreibende (gewerbliche Anmeldungen)
+  - Arbeitgeber (Steuer-ID, Aufenthaltsgenehmigungen von Mitarbeitern)
+
+# Editorial classification
+trade_off_values:
+  side_a: "Persönliche Identitätsprüfung · Datensicherheit · kommunale Selbstverwaltung"
+  side_b: "Zugänglichkeit · Zeitaufwand der Bürger · wirtschaftliche Produktivität"
+trade_off_current_lean: a
+trade_off_note: >
+  Deutschland besteht auf persönlichem Erscheinen für Vorgänge, die technisch
+  sicher remote lösbar sind — während es gleichzeitig nicht die Kapazitäten
+  bereitstellt, die für ein persönliches System bei dieser Bevölkerungsdichte
+  notwendig wären.
+
+# Key numbers
+key_numbers:
+  - label: "Wartezeit auf Bürgeramt-Termin Berlin (Stoßzeiten)"
+    value: "4–10 Wochen"
+    source: "Berliner Senat, Bürgerämterbericht 2023"
+  - label: "Verwaltungsleistungen online verfügbar (OZG-Ziel 2022)"
+    value: "ca. 33 % (Ziel: 100 %)"
+    source: "NKR — Nationaler Normenkontrollrat, Jahresbericht 2023"
+  - label: "Produktivitätsverlust durch Bürokratie pro Jahr (D)"
+    value: "ca. € 65 Mrd."
+    source: "Statistisches Bundesamt — Bürokratiekostenindex 2023"
+  - label: "Dänemark: Bürgerservices online verfügbar"
+    value: "> 90 %"
+    source: "Digitaliseringsstyrelsen (Danish Agency for Digital Government) 2023"
+
+# Comparators
+comparators:
+  - country: DK
+    country_name: Dänemark
+    summary: >
+      Dänemark hat seit 2014 eine verpflichtende digitale Post für alle
+      Bürger — Behördenkommunikation läuft standardmäßig digital über
+      e-Boks / borger.dk. Über 90 % aller Verwaltungsleistungen sind
+      online verfügbar. Das Bürgerservice-Amt (Borgerservice) existiert
+      für komplexe Ausnahmefälle — nicht als Standardkanal.
+    source: "Digitaliseringsstyrelsen — Digital Strategy 2022–2025"
+  - country: EE
+    country_name: Estland
+    summary: >
+      Estland bietet 99 % aller staatlichen Dienste digital an — die
+      einzigen drei Ausnahmen sind Heirat, Scheidung und Immobilienübertragung.
+      Bürger interagieren im Durchschnitt weniger als 5 Minuten pro Jahr
+      mit staatlichen Stellen für Routineverwaltung. Das System läuft
+      seit über 20 Jahren stabil.
+    source: "e-Estonia.com — Digital Society"
+  - country: AT
+    country_name: Österreich
+    summary: >
+      Österreich hat mit der ID Austria (Nachfolger der Handy-Signatur)
+      eine funktionsfähige digitale Identität für alle Bürger eingeführt.
+      Kernleistungen wie Meldezettel, Führerscheindaten, Sozialversicherung
+      sind über oesterreich.gv.at abrufbar — ohne Termin, ohne Wartezeit.
+      Die Akzeptanz liegt bei über 4 Millionen aktiven Nutzern.
+    source: "oesterreich.gv.at — ID Austria Nutzungsstatistik 2023"
+
+# Reform status
+reform_status: proposed
+reform_status_label: "OZG-Nachfolge (OZG 2.0) in Diskussion; strukturell ungelöst"
+reform_proposals:
+  - "OZG-Vollzug mit Konsequenzen: Kommunen, die Kernleistungen nicht bis zu einem definierten Datum digitalisieren, verlieren Anspruch auf bestimmte Bundesfördermittel"
+  - "Bundeseinheitliche digitale Identität: eID als Standard für alle Verwaltungsvorgänge; Nutzung einfacher als heute (kein Kartenlesegerät notwendig)"
+  - "Once-Only-Prinzip: Daten, die der Staat bereits hat, darf er nicht erneut abfragen — Bürger füllen keine Formulare mit bekannten Informationen aus"
+  - "Präsenzpflicht abschaffen: Für jeden Verwaltungsvorgang, der sich technisch per eID erledigen lässt, entfällt die Pflicht zur persönlichen Erscheinung — keine Ermessensentscheidung, sondern gesetzliche Regel"
+
+references:
+  - label: "OZG — Onlinezugangsgesetz 2017"
+    url: "https://www.gesetze-im-internet.de/ozg/"
+    note: "Verpflichtete Bund und Länder zur Online-Verfügbarkeit aller Verwaltungsleistungen bis Ende 2022"
+  - label: "NKR — Jahresbericht 2023: Stand der Verwaltungsdigitalisierung"
+    url: "https://www.normenkontrollrat.bund.de/nkr-de/berichte/jahresberichte"
+    note: "Ca. 33 % der OZG-Leistungen umgesetzt; Ziel 100 % verfehlt"
+  - label: "Statistisches Bundesamt — Bürokratiekostenindex 2023"
+    url: "https://www.destatis.de/DE/Themen/Staat/Buerokratiekosten/_inhalt.html"
+    note: "Geschätzter Produktivitätsverlust durch administrative Belastung: ca. € 65 Mrd./Jahr"
+  - label: "Berliner Senat — Bericht zur Lage der Bürgerämter 2023"
+    url: "https://www.berlin.de/sen/inneres/buerger-und-staat/buergerservice/"
+    note: "Wartezeiten 4–10 Wochen in Stoßzeiten; Maßnahmen zur Kapazitätserweiterung"
+  - label: "Digitaliseringsstyrelsen — Dänische Digitalstrategie 2022–2025"
+    url: "https://en.digst.dk/"
+    note: "> 90 % aller Verwaltungsleistungen online; verpflichtende digitale Post seit 2014"
+  - label: "e-Estonia — Digital Society Overview"
+    url: "https://e-estonia.com/solutions/e-governance/"
+    note: "99 % aller Staatsdienste digital; < 5 Minuten Bürgerinteraktion pro Jahr"
+  - label: "ID Austria — Österreichische digitale Identität"
+    url: "https://www.oesterreich.gv.at/id-austria.html"
+    note: "Über 4 Mio. aktive Nutzer; Kernleistungen ohne Termin abrufbar"
+
+# Metadata
+tags:
+  - bürgeramt
+  - digitalisierung
+  - ozg
+  - verwaltung
+  - wartezeiten
+  - e-government
+last_reviewed: "2025-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Für Dinge, die im Leben fast jeden betreffen — Personalausweis beantragen,
+Wohnsitz anmelden, Führerschein ummelden, Gewerbeschein besorgen —
+gibt es in Deutschland einen Standardprozess: Termin buchen beim Bürgeramt,
+erscheinen, warten, Formular ausfüllen, abgeben.
+
+In kleinen Städten funktioniert das akzeptabel. In Berlin, München, Hamburg —
+den Städten, in denen die meisten Menschen leben — ist der Prozess in
+Stoßzeiten zusammengebrochen. Wartezeiten von vier bis zehn Wochen auf
+einen Bürgeramtstermin sind in Berlin keine Ausnahme, sondern der Normalfall.<Ref id={4} />
+
+Die Konsequenzen sind real: Ein Personalausweis, der abläuft, bevor
+ein Termin verfügbar ist. Eine Einreise, die geplant war, aber ohne
+gültigen Pass nicht stattfindet. Eine Stellenzusage, die auf die
+Vorlage der Steuer-ID wartet. Ein Konto, das nicht eröffnet werden kann,
+weil die Meldebestätigung fehlt.
+
+Das Onlinezugangsgesetz<Ref id={1} /> hat 2017 festgelegt, dass alle
+Verwaltungsleistungen bis Ende 2022 online verfügbar sein müssen.
+Vom Nationalen Normenkontrollrat<Ref id={2} /> gemessen: rund 33 % wurden
+umgesetzt. Zwei Drittel der Pflicht, die der Gesetzgeber sich selbst
+auferlegt hat, sind verfehlt.
+
+## Warum es so ist
+
+Das Bürgeramt ist keine gescheiterte Idee. Es ist eine Institution,
+die für eine andere Zeit und eine andere Bevölkerungsdichte konzipiert
+wurde — und die seitdem weder organisatorisch noch technisch mitgewachsen ist.
+
+Der Grund für das Beharren auf persönlichem Erscheinen ist nicht
+Bosheit oder Ignoranz. Identitätsprüfung, sichere Dokumentenausgabe,
+Unterschriftenleistung — das sind reale Anforderungen, die persönliche
+Anwesenheit rechtfertigen können. Und kommunale Selbstverwaltung bedeutet,
+dass jede Stadt ihr Bürgeramt nach eigenem Ermessen organisiert.
+
+Das Resultat dieser föderalen Fragmentierung: 16 Bundesländer mit
+unterschiedlichen Digitalisierungsständen, hunderte verschiedene
+kommunale IT-Systeme, kein einheitliches Portal. Was Bayern entwickelt,
+hilft Brandenburg nicht, und was Hamburg einsetzt, kann Sachsen
+nicht übernehmen, ohne neu auszuschreiben.
+
+## Die Abwägung
+
+Die Frage ist nicht, ob persönliche Identitätsprüfung manchmal notwendig ist —
+sie ist es. Die Frage ist, ob sie für alle Vorgänge notwendig ist, die heute
+das Bürgeramt frequentieren. Und ob Deutschland, solange es auf persönliche
+Präsenz besteht, die dafür notwendige Kapazität bereitstellt.
+
+Estland<Ref id={6} /> bietet 99 % aller Staatsdienste digital an. Die drei
+verbleibenden Ausnahmen — Heirat, Scheidung, Immobilienübertragung —
+erfordern persönliche Anwesenheit aus nachvollziehbaren Gründen.
+Adressänderung, Personalausweisverlängerung, Kindergeldantrag:
+nicht dabei. Der geschätzte Zeitaufwand dänischer Bürger für
+Routineverwaltung: unter 5 Minuten pro Jahr.
+
+Der volkswirtschaftliche Schaden der deutschen Situation ist nicht
+hypothetisch. Das Statistische Bundesamt schätzt die jährlichen
+Kosten bürokratischer Belastung auf rund 65 Milliarden Euro.<Ref id={3} />
+Nicht alle davon entfallen auf Bürgerämter — aber das Bürgeramt ist
+das Symbol einer Verwaltungsstruktur, die nicht auf Nutzererfahrung
+optimiert ist, sondern auf Prozesskontinuität.
+
+Das Paradox: Die eID als technische Grundlage für sichere digitale
+Identifikation existiert. Der neue deutsche Personalausweis hat sie
+seit 2010. Kaum eine Behörde nimmt sie an, weil die Akzeptanzinfrastruktur
+nie aufgebaut wurde. Deutschland hat ein Werkzeug gebaut und vergessen,
+es einzuführen.
+
+## Reformrichtung
+
+Das OZG hat gezeigt, dass Digitalisierungspflichten ohne Konsequenzen
+nicht wirken. Die nächste Stufe muss anders strukturiert sein:
+
+- **Vollzug mit Konsequenzen**: Kommunen und Länder, die definierte
+  Kernleistungen nicht bis zu einem realistischen Datum digitalisieren,
+  verlieren Anspruch auf bestimmte Bundesdigitalisierungsfördermittel.
+  Freiwilligkeit hat gescheitert.
+- **eID-Pflichtakzeptanz**: Jede Bundesbehörde, die online-fähige
+  Leistungen anbietet, muss die eID akzeptieren — heute gilt das nicht
+  einmal für alle Bundesbehörden.
+- **Once-Only-Prinzip**: Was der Staat weiß, fragt er nicht erneut ab.
+  Bürger füllen keine Formulare mit Daten aus, die bereits in
+  staatlichen Registern vorliegen.
+- **Ehrliche Kapazitätsziele**: Für Leistungen, die weiter persönlich
+  angeboten werden, müssen Kommunen nachweisbare Maximumwartezeiten
+  einhalten — nicht als Empfehlung, sondern als Rechtsanspruch.
