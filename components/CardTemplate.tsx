@@ -10,7 +10,7 @@ import type { Card } from "@/lib/types";
 import { TypeBadge } from "./TypeBadge";
 import { KeyNumbers } from "./KeyNumbers";
 import { Comparators } from "./Comparators";
-import { ReformStatus } from "./ReformStatus";
+import { ReformStatus, ReformProposals } from "./ReformStatus";
 import { References } from "./References";
 import { Ref } from "./Ref";
 
@@ -72,16 +72,7 @@ export function CardTemplate({ card }: { card: Card }) {
         </figure>
       )}
 
-      {/* Comparators — shown before body so Reformrichtung references are already in context */}
-      {frontmatter.comparators && frontmatter.comparators.length > 0 && (
-        <div className="mb-10">
-          <h2 className="text-xl font-bold text-stone-900 mb-4">Internationaler Vergleich</h2>
-          <Comparators comparators={frontmatter.comparators} />
-        </div>
-      )}
-
-      {/* MDX body — sections: Was es bedeutet / Warum es dieses Gesetz gibt /
-          Die Abwägung / Reformrichtung */}
+      {/* MDX body — sections: Was es bedeutet / Warum es dieses Gesetz gibt / Die Abwägung */}
       <div className="prose prose-stone max-w-none mb-10
         prose-h2:text-xl prose-h2:font-bold prose-h2:text-stone-900 prose-h2:mt-10 prose-h2:mb-3
         prose-p:text-stone-700 prose-p:leading-relaxed
@@ -91,13 +82,28 @@ export function CardTemplate({ card }: { card: Card }) {
         <MDXRemote source={content} components={MDX_COMPONENTS} />
       </div>
 
-      {/* Reform status */}
+      {/* Comparators — directly before Reformrichtung so country references land in context */}
+      {frontmatter.comparators && frontmatter.comparators.length > 0 && (
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-stone-900 mb-4">Internationaler Vergleich</h2>
+          <Comparators comparators={frontmatter.comparators} />
+        </div>
+      )}
+
+      {/* Reformrichtung — proposals from frontmatter */}
+      {frontmatter.reform_proposals && frontmatter.reform_proposals.length > 0 && (
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-stone-900 mb-4">Reformrichtung</h2>
+          <ReformProposals proposals={frontmatter.reform_proposals} />
+        </div>
+      )}
+
+      {/* Reformstatus — current state of reform efforts */}
       <div className="mb-8">
         <h2 className="text-xl font-bold text-stone-900 mb-4">Reformstatus</h2>
         <ReformStatus
           status={frontmatter.reform_status}
           label={frontmatter.reform_status_label}
-          proposals={frontmatter.reform_proposals}
         />
       </div>
 
