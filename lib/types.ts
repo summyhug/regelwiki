@@ -4,7 +4,8 @@ export type Domain =
   | "oeffentlicher-raum"
   | "alltagsbuerokratie"
   | "unternehmen"
-  | "arbeit-familie";
+  | "arbeit-familie"
+  | "arbeitgeber-pflichten";
 export type Jurisdiction = "federal" | "state" | "municipal" | "district" | "mixed";
 export type AppliesIn = "all" | "partial";
 export type ReformStatus = "none" | "discussed" | "proposed" | "partial" | "enacted";

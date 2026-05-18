@@ -1,0 +1,224 @@
+---
+title: "A1-Bescheinigung"
+subtitle: "Wer einen Mitarbeiter drei Tage nach Wien schickt, braucht vorher ein Formular, das belegt, dass er in Deutschland sozialversichert ist. Fehlt es, droht ein Bußgeld."
+slug: a1-bescheinigung
+domain: arbeitgeber-pflichten
+domain_label: "Arbeitgeberpflichten"
+type: flickenteppich
+type_label: "Flickenteppich"
+
+# Jurisdiction
+jurisdiction: federal
+jurisdiction_label: "Bundesrecht / EU-Verordnung (SGB IV, EG-VO 883/2004)"
+legal_basis: >
+  EG-VO 883/2004 Art. 12 (Entsendung: Sozialversicherungsrecht des Entsendestaats bleibt anwendbar),
+  EG-VO 987/2009 Art. 19 (A1-Bescheinigung als Nachweis der zuständigen Sozialversicherung),
+  § 28a SGB IV (Meldepflichten des Arbeitgebers in der Sozialversicherung),
+  Durchführungsverordnung (EU) 2019/1149 (Europäische Arbeitsbehörde ELA, Kontrolle der A1-Pflicht)
+source_url: "https://www.gesetze-im-internet.de/sgb_4/__28a.html"
+applies_in: all
+local_variation: false
+
+# Who this affects
+affects:
+  - Arbeitgeber mit Mitarbeitern, die ins EU-Ausland reisen
+  - Unternehmensberatungen, Agenturen und Dienstleister mit internationalen Kunden
+  - Konzerne mit europäischen Standorten und internen Versetzungen
+  - Handwerk und Baugewerbe bei Projekteinsätzen im Ausland
+  - HR-Abteilungen und Lohnbuchhaltung mit Entsendungsmanagement
+
+# Editorial classification
+trade_off_values:
+  side_a: "Verhinderung von Sozialdumping · klare Zuständigkeit im EU-Sozialversicherungsrecht · Schutz entsandter Arbeitnehmer"
+  side_b: "Verhältnismäßigkeit bei kurzfristigen Dienstreisen · Verwaltungsaufwand für offensichtliche Standardfälle · Wettbewerbsnachteil durch träge Bearbeitung"
+trade_off_current_lean: a
+trade_off_note: >
+  Das A1-System wurde für langfristig entsandte Bauarbeiter konzipiert — und
+  gilt heute unverändert für den Berater, der für zwei Tage nach Wien fliegt.
+  Österreich hat seinen Teil des Problems gelöst: das ELDA-Portal stellt eine
+  vorläufige A1-Bescheinigung in Minuten aus. Deutsche Krankenkassen bearbeiten
+  dieselben Anträge in Tagen bis Wochen. Das Instrument ist legitim — seine
+  Umsetzung nicht proportional zur Realität heutiger Geschäftsreisetätigkeit.
+
+# Key numbers
+key_numbers:
+  - label: "Bußgeld bei fehlendem A1 in Österreich"
+    value: "bis € 2.180 pro Arbeitnehmer (ASVG § 111)"
+    source: "ASVG § 111"
+  - label: "Bußgeld bei fehlendem A1 in Frankreich"
+    value: "bis € 4.000 pro Arbeitnehmer (Détachement-Kontrolle)"
+    source: "Code du travail — Détachement"
+  - label: "Bearbeitungszeit A1 bei gesetzlicher Krankenkasse"
+    value: "wenige Tage bis mehrere Wochen je nach Kasse"
+    source: "Kassenpraxis 2024"
+  - label: "Pflicht gilt ab"
+    value: "dem ersten Tag der Auslandstätigkeit — auch bei Tagesreisen"
+    source: "EG-VO 883/2004 Art. 12; EG-VO 987/2009 Art. 19"
+  - label: "Ausnahme Drittstaaten"
+    value: "A1 gilt nur in EU/EWR/Schweiz — andere Länder: bilaterale Abkommen oder ungeklärte Lage"
+    source: "EG-VO 883/2004 Geltungsbereich"
+
+# Comparators
+comparators:
+  - country: AT
+    country_name: Österreich
+    summary: >
+      Gleiche EU-rechtliche Grundlage — ABER: Österreich hat ein volldigitales
+      A1-Antragsportal (ELDA), das in Minuten eine vorläufige Bescheinigung
+      ausstellt. Keine Wartezeit bei Standardfällen. Österreichische Arbeitgeber,
+      die Mitarbeiter ins EU-Ausland schicken, erhalten die Bescheinigung
+      unmittelbar — während deutsche Arbeitgeber für denselben Vorgang auf ihre
+      Krankenkasse warten.
+    source: "ELDA — Elektronischer Datenaustausch mit der Sozialversicherung (Österreich)"
+  - country: NL
+    country_name: Niederlande
+    summary: >
+      Digitales Antragsverfahren über das UWV-Portal — Bearbeitungszeit in der
+      Regel unter 5 Werktage, Standard-Fälle automatisiert. Unternehmen mit
+      häufigen Entsendungen erhalten Rahmen-A1 für wiederkehrende Tätigkeiten,
+      sodass nicht für jede Dienstreise ein Einzelantrag gestellt werden muss.
+    source: "UWV — Uitvoeringsinstituut Werknemersverzekeringen (Niederlande)"
+  - country: SE
+    country_name: Schweden
+    summary: >
+      Försäkringskassan stellt A1 digital aus — Standardfälle innerhalb von
+      1–3 Werktagen, Sofortbescheinigung bei kurzfristigen Reisen möglich.
+      Schweden hat als eines der ersten Länder den EU-Datenaustausch für A1
+      automatisiert (EESSI-System) und nutzt den elektronischen Abgleich mit
+      Sozialversicherungsdaten statt manueller Bearbeitung.
+    source: "Försäkringskassan — A1-intyg (Schweden); EESSI-Implementierung"
+
+# Reform status
+reform_status: discussed
+reform_status_label: "EESSI-System teilweise implementiert; Echtzeit-Ausstellung nicht realisiert; Reform national nicht beschlossen"
+reform_proposals:
+  - "Sofortbescheinigung für Standardfälle einführen: Wer in einem EU-Staat angestellt ist und vorübergehend in einem anderen EU-Staat tätig wird, erhält die A1-Bescheinigung automatisch per App oder Onlineportal — keine Bearbeitungszeit für klare Fälle"
+  - "Rahmen-A1 für Vielreisende ausweiten: Arbeitnehmer mit regelmäßiger Reisetätigkeit erhalten eine Jahresbescheinigung für alle EU-Staaten — kein Einzelantrag pro Dienstreise"
+  - "EESSI-Datenaustausch vollständig implementieren: Deutschland nutzt das europäische Datenaustauschsystem (EESSI) für alle A1-Anträge — automatischer Abgleich mit Sozialversicherungsdaten statt manueller Bearbeitung"
+  - "Bagatellgrenze einführen: Dienstreisen unter 5 Werktagen in EU-Staaten mit bilateralem Abkommen benötigen keine vorherige A1-Bescheinigung — Nachweispflicht auf Anfrage bei Kontrolle"
+
+references:
+  - label: "EG-VO 883/2004 Art. 12 — Entsendung: anwendbares Sozialversicherungsrecht"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32004R0883"
+    note: "Bei vorübergehender Entsendung in einen anderen EU-Staat bleibt das Sozialversicherungsrecht des Entsendestaats anwendbar — Grundlage der A1-Pflicht"
+  - label: "EG-VO 987/2009 Art. 19 — A1-Bescheinigung als Nachweis"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32009R0987"
+    note: "Die A1-Bescheinigung ist das offizielle Dokument, das die Zuständigkeit des Sozialversicherungsträgers im Entsendestaat nachweist"
+  - label: "§ 28a SGB IV — Meldepflichten des Arbeitgebers"
+    url: "https://www.gesetze-im-internet.de/sgb_4/__28a.html"
+    note: "Meldepflichten des Arbeitgebers in der Sozialversicherung — Grundlage für den A1-Antrag bei der zuständigen Krankenkasse"
+  - label: "Durchführungsverordnung (EU) 2019/1149 — Europäische Arbeitsbehörde (ELA)"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32019R1149"
+    note: "ELA koordiniert grenzüberschreitende Kontrollen und überwacht die Einhaltung der A1-Pflicht in den Mitgliedstaaten"
+
+# Metadata
+tags:
+  - a1-bescheinigung
+  - entsendung
+  - sozialversicherung
+  - dienstreise
+  - eu-recht
+  - krankenkasse
+  - eessi
+  - sozialdumping
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Jeder Arbeitnehmer, der auch nur für einen einzigen Tag in einem anderen
+EU/EWR-Land oder der Schweiz tätig wird, benötigt eine A1-Bescheinigung —
+**vor Reisebeginn.**<Ref id={1} /> Das Dokument stellt die zuständige
+deutsche Krankenkasse aus und belegt, dass der Arbeitnehmer weiterhin dem
+deutschen Sozialversicherungsrecht unterliegt — nicht dem des besuchten
+Landes.<Ref id={2} />
+
+Das klingt nach einer einfachen Formalität. In der Praxis ist es ein
+Prozess.
+
+Der Arbeitgeber muss für jeden Mitarbeiter, jeden Reisetermin und jedes
+Zielland einen separaten Antrag bei der jeweiligen Krankenkasse einreichen.
+Die Krankenkasse prüft den Fall und stellt die Bescheinigung aus — in
+Tagen, manchmal Wochen, je nach Kasse und Auslastung. Eine gesetzliche
+Bearbeitungsfrist gibt es nicht. Wer kurzfristig reist, reist oft ohne A1.
+
+Ohne das Dokument ist der Arbeitnehmer im Zielland technisch nicht
+nachweislich sozialversichert. Das ist kein akademisches Problem: In
+Österreich kontrolliert die Finanzpolizei A1-Bescheinigungen aktiv — auf
+Baustellen, zunehmend aber auch in Büros und bei Messen. Das Bußgeld liegt
+bei bis zu **€ 2.180 pro Arbeitnehmer**. In Frankreich sind es bis zu
+**€ 4.000 pro Arbeitnehmer** bei Détachement-Kontrollen.
+
+Die Pflicht kennt keine Bagatellgrenze.<Ref id={1} /> Ein Tagesausflug zum
+Kunden nach Amsterdam, ein Konferenzbesuch in Mailand, ein Workshop in
+Zürich — alles formell meldepflichtig. Für Unternehmen mit 50 oder mehr
+reisenden Mitarbeitern bedeutet das einen dauerhaften administrativen
+Prozess: Reisen erfassen, Anträge stellen, Bescheinigungen prüfen,
+Mitarbeiter rechtzeitig mit Dokumenten ausstatten.
+
+Drittstaaten außerhalb der EU/EWR und der Schweiz fallen nicht unter das
+A1-System.<Ref id={1} /> Für diese Länder gelten bilaterale
+Sozialversicherungsabkommen — oder es gibt keine klare Regelung. Das A1
+ist damit eine spezifisch europäische Pflicht, die genau dort greift, wo
+europäische Arbeitnehmer am häufigsten hinreisen.
+
+## Warum es diese Regelung gibt
+
+Die A1-Bescheinigung ist ein Instrument aus der **EG-Verordnung 883/2004**,
+die das Koordinierungsproblem des europäischen Binnenmarkts lösen sollte:
+Wenn Arbeitnehmer über Grenzen hinweg tätig werden, muss klar sein, welches
+nationale Sozialversicherungssystem für sie zuständig ist — und welches
+nicht.<Ref id={1} />
+
+Das konkrete Ausgangsproblem war **Sozialdumping im Baugewerbe**: Baufirmen
+aus Mitgliedstaaten mit niedrigeren Sozialversicherungsbeiträgen entsandten
+Arbeitnehmer in Hochlohnländer, ohne die dortigen Sozialbeiträge zu zahlen.
+Sie konnten günstiger anbieten als lokale Unternehmen, die die volle
+Beitragslast trugen. Das A1-System beendet diese Unklarheit: Der Arbeitnehmer
+ist entweder in seinem Heimatland oder im Aufnahmeland sozialversichert —
+nicht in keinem, nicht in beiden. Die A1-Bescheinigung ist der Nachweis.
+
+Die Europäische Arbeitsbehörde (ELA) wurde 2019 eigens gegründet, um die
+Einhaltung dieser Regeln grenzüberschreitend zu kontrollieren und
+Datenaustausch zwischen nationalen Behörden zu koordinieren.<Ref id={4} />
+Das Instrument ist also nicht nur EU-Recht — es wird aktiv durchgesetzt.
+
+## Die Abwägung
+
+Ein Berater, der für zwei Tage nach Wien fliegt, und ein Bauarbeiter, der
+für sechs Monate auf einer Wiener Baustelle arbeitet, unterliegen exakt
+derselben A1-Pflicht. Das Instrument wurde für den zweiten Fall konzipiert.
+Es löst kein Problem beim ersten.
+
+Der Berater ist offensichtlich in Deutschland sozialversichert. Er stellt
+kein Sozialdumping-Risiko dar. Er verringert keine österreichischen
+Sozialbeiträge. Seine Zwei-Tage-Reise verändert nichts an den
+Beitragsverhältnissen. Trotzdem muss sein Arbeitgeber einen Antrag stellen,
+auf die Krankenkasse warten und dafür sorgen, dass er das Dokument rechtzeitig
+erhält — sonst riskiert er ein Bußgeld.
+
+**Österreich hat seinen Teil des Problems gelöst.** Das ELDA-Portal stellt
+eine vorläufige A1-Bescheinigung in Minuten aus. Kein Warterisiko, keine
+Verzögerung. Die Schweden haben das EESSI-Datenaustauschsystem automatisiert
+— Standardfälle laufen ohne manuelle Prüfung durch.<Ref id={3} /> Die
+Niederlande vergeben Rahmen-A1-Bescheinigungen für Vielreisende, sodass
+nicht für jede Dienstreise ein neuer Antrag nötig ist.
+
+Deutschland ist die Engstelle im System. Die gesetzliche Grundlage ist
+europäisch und für alle Mitgliedstaaten identisch. Die Bearbeitungszeit ist
+eine nationale Umsetzungsfrage — und hier variieren die deutschen
+Krankenkassen erheblich. Manche bearbeiten Anträge in wenigen Tagen,
+andere brauchen mehrere Wochen. Kurzfristig geplante Dienstreisen landen
+systematisch in einer Compliance-Grauzone.
+
+Das Ergebnis ist vorhersehbar: Unternehmen mit professionellem
+HR-Management bauen A1-Prozesse auf und tragen die Kosten. Kleinere
+Unternehmen und Selbständige mit Angestellten schicken Mitarbeiter
+ohne Bescheinigung und nehmen das Bußgeldrisiko in Kauf — oder sie
+beschränken Auslandsreisen auf das absolute Minimum. Beides ist keine
+wünschenswerte Reaktion auf eine Regelung, die Sozialdumping verhindern soll.
+
+Das Instrument ist richtig. Die Verhältnismäßigkeit fehlt: zwischen dem
+langfristig entsandten Bauarbeiter, für den es gedacht war, und dem
+Konferenzteilnehmer, für den es sinnlos Aufwand erzeugt.
