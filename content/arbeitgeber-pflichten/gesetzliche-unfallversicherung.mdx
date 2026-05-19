@@ -1,0 +1,232 @@
+---
+title: "Gesetzliche Unfallversicherung"
+subtitle: "Jeder Arbeitgeber ist Pflichtmitglied in einer Berufsgenossenschaft. Das System wurde 1884 für Fabrikarbeiter entworfen — und gilt heute unverändert für den Softwareentwickler im Homeoffice."
+slug: gesetzliche-unfallversicherung
+domain: arbeitgeber-pflichten
+domain_label: "Arbeitgeberpflichten"
+type: zeitgeist-problem
+type_label: "Zeitgeist-Problem"
+
+# Jurisdiction
+jurisdiction: federal
+jurisdiction_label: "Bundesrecht (SGB VII)"
+legal_basis: >
+  § 2 SGB VII (Versicherung kraft Gesetzes — Pflichtversicherung aller Beschäftigten),
+  § 8 SGB VII (Arbeitsunfall und Wegeunfall),
+  § 9 SGB VII (Berufskrankheit),
+  § 104 SGB VII (Haftungsablösung — BG ersetzt Arbeitgeberhaftung),
+  § 140 SGB VII (Auslandsversicherung)
+source_url: "https://www.gesetze-im-internet.de/sgb_7/__2.html"
+applies_in: all
+local_variation: false
+
+# Who this affects
+affects:
+  - Alle Arbeitgeber in Deutschland — unabhängig von Branche und Betriebsgröße
+  - Remote-Arbeitende und Homeoffice-Mitarbeiter
+  - Arbeitgeber mit Mitarbeitern im Ausland oder auf Workation
+  - Kleinstunternehmen und Solo-Selbstständige mit ersten Angestellten
+
+# Editorial classification
+trade_off_values:
+  side_a: "Universeller Unfallschutz ohne Verschuldensprüfung · Arbeitgeberhaftung pauschal abgelöst · solidarische Finanzierung nach Risikosektoren"
+  side_b: "Arbeitgeber haftet für Wege und Räume, die er nicht kontrolliert · System für Industriearbeit auf Wissensarbeit ausgedehnt · Weiterentwicklung 2024 geht in falsche Richtung"
+trade_off_current_lean: a
+trade_off_note: >
+  Das System ist für seinen ursprünglichen Zweck — den Schutz von Arbeitern
+  in gefährlichen Industriebetrieben — gut konstruiert. Das Problem ist die
+  Ausdehnung auf Sachverhalte, für die es nicht gedacht war: den Weg vom
+  Schlafzimmer ins Homeoffice, die Kaffeepause im Airbnb, den Arbeitsweg
+  eines Mitarbeiters, der selbst entschieden hat, eine Stunde entfernt zu wohnen.
+  Das Unfallversicherungs-Weiterentwicklungsgesetz 2024 hat die Ausdehnung
+  weiter vorangetrieben — entgegen der Reformrichtung.
+
+# Key numbers
+key_numbers:
+  - label: "Effektiver Beitragssatz: Büro/Wissensarbeit (VBG)"
+    value: "ca. 0,28 % der Lohnsumme"
+    source: "VBG Beitragsfuß 2025 (4,40) × Gefahrklasse ~0,63 für Verwaltung/Beratung"
+  - label: "Effektiver Beitragssatz: Bauhauptgewerbe (BG BAU)"
+    value: "ca. 5,17 % der Lohnsumme — ca. 18× höher als Büroarbeit"
+    source: "BG BAU Beitragssätze 2025; Gefahrklasse ~11,84 für Kernbaugewerbe"
+  - label: "Wegeunfälle 2024"
+    value: "173.483 — ca. 19 % aller gemeldeten Arbeitsunfälle"
+    source: "DGUV Jahresstatistik 2024"
+  - label: "Tödliche Wegeunfälle 2024"
+    value: "215 von 345 tödlichen Arbeitsunfällen gesamt — 62 %"
+    source: "DGUV Jahresstatistik 2024"
+  - label: "Unfallrate Büro/Verwaltung vs. Bau"
+    value: "VBG: 11,54 / BG BAU: ~52 je 1.000 Vollarbeiter — Faktor 4–5"
+    source: "VBG Statistik 2024; DGUV Branchenvergleich 2023"
+
+# Comparators
+comparators:
+  - country: GB
+    country_name: Großbritannien
+    summary: >
+      Das britische Employers' Liability (Compulsory Insurance) Act 1969
+      verpflichtet Arbeitgeber zu einer privaten Haftpflichtversicherung
+      (Mindestdeckung £5 Mio.). Entscheidender Unterschied: Der Arbeitsweg
+      (Pendeln) ist ausdrücklich NICHT abgedeckt — Unfälle auf dem Weg zur
+      Arbeit gelten als außerhalb des "course of employment". Arbeitnehmer
+      sind für ihren Arbeitsweg selbst verantwortlich. Großbritannien ist
+      damit eine der wenigen Ausnahmen in Europa, die den Wegeunfall
+      bewusst aus der Arbeitgeberhaftung heraushalten.
+    source: "Employers' Liability (Compulsory Insurance) Act 1969; HSE Guidance EL(L)1; Ius Laboris Comparative Report 2023"
+  - country: NL
+    country_name: Niederlande
+    summary: >
+      Die Niederlande haben kein separates staatliches Unfallversicherungssystem.
+      Arbeitgeberrisiken werden über das allgemeine Kranken- und
+      Erwerbsminderungssystem (ZW/WIA) abgedeckt — ohne Unterscheidung
+      zwischen Arbeitsunfall und Krankheit. Arbeitgeber haften zivilrechtlich
+      nach BW für Arbeitsunfälle. Der Wegeunfall ist keine eigenständige
+      versicherungsrechtliche Kategorie: Ein Pendler, der verunglückt,
+      fällt ins allgemeine Krankenversicherungssystem wie bei jeder
+      anderen Verletzung auch.
+    source: "Burgerlijk Wetboek Art. 7:658 (Arbeitgeberhaftung); Wet werk en inkomen naar arbeidsvermogen (WIA); business.gov.nl"
+
+# Reform status
+reform_status: none
+reform_status_label: "Keine Reform in Sicht — Weiterentwicklungsgesetz 2024 hat Abdeckung ausgebaut, nicht reduziert"
+reform_proposals:
+  - "Wegeunfall aus Arbeitgeberhaftung entfernen: Wer remote-fähig arbeitet und selbst entschieden hat, weit entfernt zu wohnen, trägt das Pendelrisiko selbst — Wegeunfall in die allgemeine Kranken- und Unfallversicherung überführen, wie in Großbritannien. Die BDA fordert dies seit Jahren."
+  - "Homeoffice-Ausdehnung begrenzen: Der Arbeitgeber stellt Arbeitsmittel und trägt Verantwortung für die berufliche Tätigkeit — nicht für die Architektur der Privatwohnung des Mitarbeiters. Das Weiterentwicklungsgesetz 2024 hat die Haftung weiter ausgedehnt; dieser Trend sollte nicht fortgesetzt werden."
+
+references:
+  - label: "§ 2 SGB VII — Versicherung kraft Gesetzes"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__2.html"
+    note: "Automatische Pflichtversicherung aller Beschäftigten — ohne Antrag, ohne Vertrag"
+  - label: "§ 8 SGB VII — Arbeitsunfall und Wegeunfall"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__8.html"
+    note: "Definition Arbeitsunfall (Abs. 1) und Wegeunfall (Abs. 2 Nr. 1–4); unmittelbarer Weg nach und von der Arbeit"
+  - label: "§ 104 SGB VII — Haftungsablösung"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__104.html"
+    note: "Die BG übernimmt die zivilrechtliche Haftung des Arbeitgebers gegenüber dem Arbeitnehmer — außer bei Vorsatz"
+  - label: "BSG B 2 U 4/21 R — Homeoffice-Treppe als Arbeitsunfall (2021)"
+    url: "https://www.bsg.bund.de/SharedDocs/Entscheidungen/DE/2021/2021_12_08_B_02_U_04_21_R.html"
+    note: "Weg vom Schlafzimmer ins Homeoffice ist versicherter Betriebsweg — Homeoffice gilt als Arbeitsstätte"
+  - label: "Unfallversicherungs-Weiterentwicklungsgesetz 2024 — BMAS"
+    url: "https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2024/unfallversicherungs-weiterentwicklungsgesetz-beschlossen.html"
+    note: "Homeoffice-Schutz weiter ausgedehnt; Wegeunfall-Abdeckung für Kinderbetreuung erweitert — tritt in Kraft August 2024"
+  - label: "DGUV Jahresstatistik 2024 — Unfallgeschehen"
+    url: "https://www.dguv.de/de/zahlen-fakten/au-wu-geschehen/index.jsp"
+    note: "754.660 Arbeitsunfälle, 173.483 Wegeunfälle, 345 tödliche Unfälle gesamt"
+  - label: "Employers' Liability Act 1969 — UK"
+    url: "https://www.hse.gov.uk/pubns/hse40.htm"
+    note: "Private Pflichtversicherung für Arbeitgeberhaftung — Arbeitsweg ausdrücklich nicht abgedeckt"
+
+# Metadata
+tags:
+  - unfallversicherung
+  - berufsgenossenschaft
+  - wegeunfall
+  - homeoffice
+  - sgb-vii
+  - arbeitgeberhaftung
+  - arbeitsunfall
+  - beitrag
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Wer in Deutschland einen Mitarbeiter beschäftigt, wird automatisch
+Pflichtmitglied in der zuständigen Berufsgenossenschaft.<Ref id={1} />
+Kein Antrag, kein Vertrag — die Versicherung entsteht kraft Gesetzes
+am ersten Arbeitstag des ersten Mitarbeiters. Der Arbeitgeber zahlt
+die Beiträge allein; der Arbeitnehmer zahlt nichts.
+
+**Was die BG abdeckt.**
+Die gesetzliche Unfallversicherung greift bei drei Ereignissen:<Ref id={2} />
+Arbeitsunfällen (Unfälle bei der Arbeit), Wegeunfällen (Unfälle auf
+dem direkten Weg zur oder von der Arbeit) und Berufskrankheiten
+(anerkannte arbeitsbedingte Erkrankungen wie Lärmschwerhörigkeit
+oder Bandscheibenerkrankungen durch schweres Heben). Im Gegenzug
+übernimmt die BG die zivilrechtliche Haftung des Arbeitgebers
+gegenüber dem verletzten Mitarbeiter — der Mitarbeiter kann
+den Arbeitgeber bei einem Arbeitsunfall grundsätzlich nicht
+persönlich verklagen.<Ref id={3} />
+
+**Was die BG kostet.**
+Der Beitrag errechnet sich aus Lohnsumme, Gefahrklasse des
+Tätigkeitsbereichs und dem Beitragsfuß der zuständigen BG.
+Für ein Büro- oder Beratungsunternehmen (Verwaltungs-BG, VBG)
+liegt der effektive Beitragssatz bei ca. 0,28 % der Lohnsumme.
+Für ein Bauunternehmen (BG BAU) bei ca. 5,17 % — etwa achtzehnmal
+so viel. Das Gefahrklassensystem tut also einen Teil der Arbeit:
+Es spiegelt wider, dass ein Dachdecker ein grundlegend anderes
+Unfallrisiko hat als ein Buchhalter.
+
+**Wohin sich das System ausgedehnt hat.**
+Das BSG entschied im Dezember 2021, dass der Weg vom Schlafzimmer
+ins Homeoffice ein versicherter Betriebsweg ist:<Ref id={4} />
+Der Mitarbeiter, der auf seiner eigenen Treppe stürzt, bevor er
+seinen Laptop aufklappt, hat einen Arbeitsunfall. Das Homeoffice
+ist die Arbeitsstätte — und die Arbeitsstätte kennt keine
+Eigenverantwortung des Mieters für die Wohnungsarchitektur.
+Das Unfallversicherungs-Weiterentwicklungsgesetz 2024 hat
+diesen Grundsatz gesetzlich verankert und weiter ausgebaut.<Ref id={5} />
+
+## Warum es diese Regelung gibt
+
+Das Unfallversicherungsgesetz von 1884 war Teil von Bismarcks
+Sozialversicherungsreform — einer politischen Reaktion auf die
+Arbeiterbewegung und die Industrialisierung. Fabrikarbeiter
+arbeiteten in inhärent gefährlichen Umgebungen, die der
+Arbeitgeber kontrollierte: Maschinen, Gerüste, chemische Stoffe.
+Wer sich verletzte, musste dem Arbeitgeber vorher Fahrlässigkeit
+beweisen — praktisch kaum möglich. Das neue System ersetzte
+diese Klagelogik durch garantierte Leistungen ohne Verschuldensprüfung.
+
+Das war eine gute Lösung für ein echtes Problem: Der Arbeitgeber
+kontrollierte die gefährliche Umgebung, trug das Risiko, und
+zahlte in den Topf ein. Der Arbeitnehmer bekam schnelle,
+zuverlässige Leistungen ohne jahrelangen Prozess.
+
+Der Wegeunfall wurde 1963 hinzugefügt — zu einer Zeit, in der
+der Arbeitsweg für die meisten Arbeitnehmer durch die
+Standortentscheidung des Arbeitgebers determiniert war:
+Die Fabrik steht dort, also muss der Arbeiter dort hin.
+
+## Die Abwägung
+
+Das System des Jahres 1884 trifft heute auf eine Arbeitswelt,
+in der Millionen Menschen ihren Arbeitsplatz täglich selbst wählen —
+ob Büro, Homeoffice oder Café. Drei Annahmen, auf denen das
+System beruht, sind für Wissensarbeit nicht mehr tragfähig.
+
+**Annahme 1: Der Arbeitgeber kontrolliert die Arbeitsumgebung.**
+Für eine Fabrik stimmt das. Für ein Homeoffice stimmt es nicht.
+Der Arbeitgeber hat die Küche des Mitarbeiters nicht gestaltet,
+die Treppe nicht gebaut, und kann den Bodenbelag nicht
+inspizieren. Die Haftungslogik — Kontrolle über die Umgebung
+rechtfertigt Verantwortung für Unfälle darin — bricht zusammen,
+sobald die Umgebung die Privatwohnung ist.
+
+**Annahme 2: Der Arbeitsweg ist arbeitgeberveranlasst.**
+Der Wegeunfall wurde für Beschäftigte eingeführt, die an einen
+bestimmten Ort müssen, weil der Arbeitgeber dort die Fabrik
+gebaut hat. Ein Wissensarbeiter, der sich entschieden hat, eine
+Stunde vom Büro entfernt zu wohnen, trägt eine eigene
+Standortentscheidung mit sich — die der Arbeitgeber weder
+verlangt noch kontrolliert hat.
+
+Großbritannien hat das Wegeunfall-Prinzip bewusst nicht
+übernommen:<Ref id={6} /> Der Arbeitsweg liegt außerhalb des
+Arbeitsverhältnisses, die Haftung liegt beim Arbeitnehmer.
+Über 80 % der EU-Staaten sind dem deutschen Modell gefolgt —
+aber die Entscheidung war keine zwingende Logik, sondern
+eine politische Weichenstellung.
+
+**Annahme 3: Die Ausdehnung ist richtungsweisend.**
+Das Weiterentwicklungsgesetz 2024<Ref id={5} /> hat den Homeoffice-Schutz
+weiter ausgebaut — in dem Jahr, in dem hybride Arbeit zur Norm
+geworden ist. Die Richtung ist klar: Der Schutzbereich wächst,
+die Verantwortung des Arbeitgebers für Räume, Wege und
+Situationen, die er nicht kontrolliert, wächst mit. Eine
+Gegenbewegung — die Trennung zwischen kontrollierter
+Arbeitsumgebung (wo Arbeitgeberhaftung sinnvoll ist) und
+eigenverantworteter Lebensgestaltung (Wohnort, Einrichtung,
+Freizeitübergänge) — ist politisch derzeit nicht in Sicht.
