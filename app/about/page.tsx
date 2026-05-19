@@ -16,7 +16,7 @@ const FAQ = [
   },
   {
     q: "Wie wurden die Karten erstellt?",
-    a: "Regelwiki wurde mit KI-Unterstützung aufgebaut. KI halluziniert — das ist keine theoretische Möglichkeit, sondern eine realistische Erwartung. Zahlen, Paragraphenangaben und Fallbezeichnungen können falsch sein, auch wenn die KI mit konkreten Rechtsquellen gearbeitet hat. Ein Mensch geht die Karten deshalb einzeln durch und prüft sie gegen die verlinkten Originalquellen. Das ist keine perfekte Lösung — aber KI liefert eine brauchbare Basis, von der aus sich Inhalte gezielt prüfen und korrigieren lassen. Alle Quellen sind direkt in jeder Karte verlinkt, damit du selbst nachschauen kannst.",
+    a: "Regelwiki wurde mit KI-Unterstützung aufgebaut. KI halluziniert — das ist keine theoretische Möglichkeit, sondern eine realistische Erwartung. Zahlen, Paragraphenangaben und Fallbezeichnungen können falsch sein, auch wenn die KI mit konkreten Rechtsquellen gearbeitet hat. Die Karten werden von einem Menschen einzeln durchgegangen und gegen die verlinkten Originalquellen geprüft — dieser Prozess läuft noch. Nicht alle Karten sind bisher manuell verifiziert. KI liefert eine brauchbare Basis, von der aus sich Inhalte gezielt prüfen und korrigieren lassen — aber bis eine Karte manuell geprüft wurde, solltest du die verlinkten Quellen selbst konsultieren.",
   },
   {
     q: "Sind die Inhalte rechtlich verlässlich?",
