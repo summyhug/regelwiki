@@ -1,0 +1,269 @@
+---
+title: "Kataster"
+subtitle: "Deutschland hat ein digitales Liegenschaftskataster — aber Grundstücksdaten kosten Geld, variieren nach Bundesland und bremsen jeden Planungsprozess"
+slug: kataster
+domain: wohnen-bauen
+domain_label: "Wohnen & Bauen"
+type: flickenteppich
+type_label: "Flickenteppich"
+
+# Jurisdiction
+jurisdiction: state
+jurisdiction_label: "Ländersache (Vermessungs- und Katasterwesen); EU INSPIRE-Richtlinie als Overlay"
+legal_basis: >
+  Vermessungsgesetze der Länder (z.B. VermKatG NRW, BayVermGeoG, VermGeoG BW);
+  INSPIRE-Richtlinie 2007/2/EG (EU-Geodateninfrastruktur);
+  Liegenschaftskataster-Zugangsverordnungen der Länder
+source_url: "https://www.gesetze-im-internet.de/inspire-richtlinie/"
+applies_in: all
+applies_in_note: >
+  ALKIS gilt bundesweit als einheitliches Datenbankmodell, wird aber von 16
+  Bundesländern mit eigenem Zugangsrecht, eigenen Gebührenordnungen und
+  eigener Weitergabepolitik betrieben. Das Modell ist einheitlich;
+  der Zugang ist es nicht.
+local_variation: true
+local_variation_note: >
+  Jedes Bundesland betreibt ein eigenes Vermessungs- oder
+  Landesvermessungsamt. Preise, Registrierungspflicht, Verwendungszweck-
+  angabe und Datenformate variieren erheblich. NRW und Thüringen haben
+  Teile der Katasterdaten als Open Data freigegeben; Bayern, Baden-
+  Württemberg und andere Länder verlangen weiterhin Gebühren und
+  formale Anträge. Ein bundeseinheitlicher Freiheitszugang existiert nicht.
+
+# Who this affects
+affects:
+  - Architekten und Planungsbüros
+  - Projektentwickler und Bauträger
+  - Kommunen und Planungsbehörden
+  - Notare und Grundstücksgutachter
+  - Forschungseinrichtungen und Geodatenanalysten
+  - Privateigentümer bei Bauantragsverfahren
+
+# Editorial classification
+trade_off_values:
+  side_a: "Kostendeckung der Vermessungsämter · Datenschutz bei Eigentümerangaben · Ländliche Einnahmen aus Geodienstleistungen"
+  side_b: "Planungsgeschwindigkeit · Innovationsförderung · Gleichbehandlung öffentlicher Infrastrukturdaten · EU INSPIRE-Ziele"
+trade_off_current_lean: a
+trade_off_note: >
+  Das Argument für kostenpflichtige Katasterdaten ist die Finanzierung der
+  Vermessungsämter. In der Praxis bedeutet das: Daten, die aus öffentlichen
+  Mitteln erhoben und gepflegt werden, werden als kommerzielles Produkt
+  behandelt. Österreich, die Niederlande und das Vereinigte Königreich zeigen,
+  dass staatlich erhobene Geodaten als öffentliche Infrastruktur kostenlos
+  zugänglich sein können — ohne dass die zuständigen Behörden aufgelöst wurden.
+
+# Key numbers
+key_numbers:
+  - label: "Kosten Liegenschaftskarte (Einzelextrakt, je nach Bundesland und Format)"
+    value: "€10–€100+"
+    source: "Gebührenordnungen der Landesvermessungsämter; Vergleich GeoPortal.de 2024"
+  - label: "ALKIS-Vollabzug für eine Gemeinde (kommerzieller Datenbezug)"
+    value: "mehrere Hundert bis mehrere Tausend Euro"
+    source: "Geodatenzentren der Länder — Preislisten 2023/2024"
+  - label: "Österreich BEV: Kosten für Katasterdaten online"
+    value: "€0 — vollständig kostenlos seit 2021"
+    source: "BEV Bundesamt für Eich- und Vermessungswesen, maps.bev.gv.at"
+  - label: "Niederlande PDOK: Kosten für Kadaster-Daten"
+    value: "€0 — Open Data seit 2012"
+    source: "Kadaster Nederland, PDOK (Publieke Dienstverlening Op de Kaart)"
+  - label: "UK Ordnance Survey: Core-Datensätze seit"
+    value: "2020 kostenlos (National Geographic Data Strategy)"
+    source: "Ordnance Survey — OpenData, os.uk/opendata"
+
+# Comparators
+comparators:
+  - country: AT
+    country_name: Österreich
+    summary: >
+      Das BEV (Bundesamt für Eich- und Vermessungswesen) stellt unter
+      maps.bev.gv.at Katasterparzellen, Adressen, Orthophotos und
+      Höhendaten kostenlos und ohne Registrierung bereit. Der vollständige
+      Datensatz ist als Download verfügbar. Das BEV behandelt diese Daten
+      explizit als öffentliche Infrastruktur — vergleichbar mit dem
+      Straßennetz oder dem Gewässernetz. Kein Antrag, kein Verwendungszweck,
+      keine Gebühr.
+    source: "BEV Österreich, maps.bev.gv.at; BEV Open Government Data Strategie 2021"
+  - country: NL
+    country_name: Niederlande
+    summary: >
+      Das niederländische Kadaster stellt über das PDOK-Portal (Publieke
+      Dienstverlening Op de Kaart) vollständige Katasterdaten kostenlos zum
+      Download bereit — Parzellengrenzen, Eigentümertypen (ohne persönliche
+      Daten), Nutzungsflächen. Die Öffnung erfolgte 2012; seither haben
+      zahlreiche Planungs- und PropTech-Anwendungen auf dieser Basis
+      aufgebaut. Eine Registrierung ist nicht erforderlich.
+    source: "Kadaster Nederland, kadaster.nl/open-data; PDOK, pdok.nl"
+  - country: GB
+    country_name: Vereinigtes Königreich
+    summary: >
+      Der Ordnance Survey veröffentlichte 2020 unter der National Geographic
+      Data Strategy seine Core-Datensätze kostenlos. Dazu gehören OS Open
+      Map, OS Terrain 50, OS Boundary Line und INSPIRE-konforme
+      Katasterdaten (mit Parzellenumrissen). Vollständige Parzelldaten mit
+      Eigentümerinformationen sind kostenpflichtig beim HM Land Registry —
+      aber Parzellengrenzen und Nutzungsdaten sind frei zugänglich.
+    source: "Ordnance Survey OpenData, os.uk/opendata; HMLR INSPIRE Polygons, gov.uk"
+
+# Reform status
+reform_status: partial
+reform_status_label: "Einzelne Länder (NRW, Thüringen) haben Open Data eingeführt; bundesweite Regelung fehlt"
+reform_proposals:
+  - "Bundesweite Open-Data-Pflicht für ALKIS-Basisdaten: Parzellengrenzen, Flurstücknummern, Nutzungsarten und Gebäudegrundrisse als kostenlos downloadbare Open Data — bundeseinheitlich, ohne Registrierung, ohne Verwendungszweckangabe"
+  - "INSPIRE vollständig und praktisch umsetzen: nicht nur formale Compliance, sondern maschinenlesbare Rohdaten im Bulk-Download — kein Antrag, kein Portal-Login, keine künstliche Mengenbegrenzung"
+  - "Personenbezogene Eigentümerdaten separat behandeln: Parzellendaten und Eigentümer-Identitätsdaten sind trennbar — das Datenschutzargument rechtfertigt nicht die Sperrung geometrischer Infrastrukturdaten"
+
+references:
+  - label: "ALKIS — Amtliches Liegenschaftskataster-Informationssystem (AdV)"
+    url: "https://www.adv-online.de/AdV-Produkte/Liegenschaftskataster/ALKIS/"
+    note: "Technisches Regelwerk und Datenmodell; eingeführt ab 2000er Jahren als Ablösung von ALK und ALB"
+  - label: "INSPIRE-Richtlinie 2007/2/EG — Geodateninfrastruktur der EU"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32007L0002"
+    note: "EU-Richtlinie zur Interoperabilität und Zugänglichkeit räumlicher Daten; Anhang I enthält Katasterparzellen als verpflichtenden Datensatz"
+  - label: "GDI-DE — Geodateninfrastruktur Deutschland"
+    url: "https://www.gdi-de.org/INSPIRE"
+    note: "Umsetzung der INSPIRE-Richtlinie in Deutschland; formale Compliance-Berichte der Länder"
+  - label: "BEV Österreich — Open Government Data, maps.bev.gv.at"
+    url: "https://www.bev.gv.at/Services/Produkte/Kataster/Digital.html"
+    note: "Kostenloser Zugang zu Katasterparzellen, Adressen, Höhendaten und Orthophotos; kein Antrag erforderlich"
+  - label: "Kadaster Nederland — PDOK Open Data"
+    url: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-producten/bag-als-open-data"
+    note: "Vollständige Katasterdaten kostenlos über PDOK; Öffnung 2012"
+  - label: "Ordnance Survey — OS OpenData (UK)"
+    url: "https://www.ordnancesurvey.co.uk/products#sheet=all&filter=Free"
+    note: "Kostenlose Kern-Geodatensätze seit 2020 unter der National Geographic Data Strategy; INSPIRE-konforme Parzelldaten"
+  - label: "NRW Open Geodata — Liegenschaftskarte und ALKIS-Daten"
+    url: "https://www.bezreg-koeln.nrw.de/geobasis-nrw/produkte-und-dienste/liegenschaftskataster"
+    note: "NRW als Vorreiter in Deutschland: Teile der ALKIS-Daten als Open Data verfügbar; Basis-DLM und Liegenschaftskartenraster downloadbar"
+  - label: "Thüringen GDI — Geodatenportal und Open Data"
+    url: "https://www.geoportal-th.de/de-de/Downloadbereiche/Download-Offene-Geodaten-Th%C3%BCringen"
+    note: "Thüringen bietet ausgewählte Katasterdaten und Geobasisdaten als Open Data an"
+  - label: "AdV — Preismodelle für amtliche Geobasisdaten (Übersicht)"
+    url: "https://www.adv-online.de/AdV-Produkte/Preise/"
+    note: "Übersicht der Preismodelle der Arbeitsgemeinschaft der Vermessungsverwaltungen; zeigt Varianz zwischen den Ländern"
+
+# Metadata
+tags:
+  - kataster
+  - ALKIS
+  - geodaten
+  - liegenschaftskarte
+  - open-data
+  - vermessungsamt
+  - INSPIRE
+  - wohnungsbau
+  - planungsrecht
+  - flickenteppich
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Wer in Deutschland für ein Planungsvorhaben die offiziellen Grundstücksgrenzen
+braucht — ein Architekt, ein Entwickler, ein Notar, eine Gemeinde, ein Gutachter
+— muss diese Daten kaufen. Nicht von einem Privatunternehmen. Vom Staat.
+
+Das amtliche Liegenschaftskataster wird in Deutschland seit den 2000er Jahren
+unter dem einheitlichen Systemrahmen ALKIS geführt —
+Amtliches Liegenschaftskataster-Informationssystem.<Ref id={1} /> ALKIS enthält,
+was Planung und Eigentumsrecht braucht: Parzellengrenzen, Flurstücknummern,
+Nutzungsarten, Gebäudegrundrisse. Es löste die älteren Systeme ALK (grafische
+Liegenschaftskarte) und ALB (alphanumerisches Liegenschaftsbuch) ab und brachte
+erstmals ein bundesweit einheitliches Datenmodell.
+
+Das Modell ist einheitlich. Der Zugang ist es nicht.
+
+Jedes der 16 Bundesländer betreibt ein eigenes Vermessungs- oder
+Landesvermessungsamt mit eigener Gebührenordnung, eigenen Zugangspforten und
+eigener Politik gegenüber Open Data.<Ref id={8} /> Wer eine Liegenschaftskarte
+braucht, zahlt: je nach Bundesland, Maßstab und Format zwischen 10 und über
+100 Euro für einen Einzelextrakt.<Ref id={9} /> Wer ALKIS-Daten für eine
+ganze Gemeinde oder ein Planungsgebiet benötigt — etwa für eine
+Baulückenanalyse, ein Infrastrukturprojekt oder eine städtebauliche Studie
+— zahlt hunderte bis tausende Euro, muss sich registrieren und in vielen
+Ländern einen Verwendungszweck angeben.
+
+Manche Länder haben Online-Viewer eingerichtet, die Parzellen anzeigen —
+BayernAtlas, Brandenburg Viewer, Geoviewer NRW. Ansehen ist kostenfrei.
+Herunterladen, weiterverarbeiten, in Planungsprozesse integrieren: kostenpflichtig,
+formalpflichtig, länderspezifisch.
+
+**Was Österreich anders macht.** Unter maps.bev.gv.at stellt das Bundesamt
+für Eich- und Vermessungswesen Katasterparzellen, Adressen, Orthophotos und
+Höhendaten kostenlos und ohne Registrierung bereit.<Ref id={4} /> Kein Antrag.
+Kein Verwendungszweck. Kein Preis. Der vollständige Datensatz ist als Bulk-Download
+verfügbar. Das BEV behandelt diese Daten explizit als öffentliche Infrastruktur —
+vergleichbar mit dem Straßennetz.
+
+Die Niederlande öffneten ihr Kataster 2012 über das PDOK-Portal.<Ref id={5} />
+Das Vereinigte Königreich folgte 2020 mit der Freigabe der Ordnance-Survey-
+Kerndatensätze unter der National Geographic Data Strategy.<Ref id={6} />
+In beiden Ländern entstanden seitdem Planungs-, Forschungs- und
+Technologieanwendungen, die auf diesen Daten aufbauen — ohne Gebühren
+zu entrichten, die den Zugang zur öffentlichen Infrastruktur bepreisen.
+
+**Die EU INSPIRE-Richtlinie**<Ref id={2} /> verpflichtet Mitgliedstaaten seit 2007,
+Geodaten — darunter Katasterparzellen als Pflichtdatensatz des Anhangs I —
+interoperabel und zugänglich zu machen. Deutschland gilt formal als INSPIRE-compliant.<Ref id={3} />
+In der Praxis bedeutet das: Metadaten sind verfügbar, Dienste sind registriert,
+die Daten liegen hinter Portalen mit Registrierungspflicht und Preismodellen.
+INSPIRE-Compliance und praktischer Freiheitszugang sind nicht dasselbe.
+
+## Warum es diese Regelung gibt
+
+Die Kostendeckungslogik ist einfach: Vermessungsämter erheben und pflegen
+Katasterdaten mit erheblichem personellen Aufwand. Gebühren sollen diesen
+Aufwand finanzieren. Das Argument hat historische Wurzeln — Kataster entstanden
+als staatliche Dienstleistung mit direktem Kostenträger, klassisch im
+Grundbuch- und Vermessungswesen.
+
+Hinzu kommt ein Datenschutzargument: Das Liegenschaftskataster enthält nicht
+nur Geometriedaten, sondern auch Eigentümerangaben. Die Verknüpfung von
+Parzelldaten mit Personendaten soll nicht ohne weiteres öffentlich zugänglich sein.
+
+Beide Argumente haben ihre Berechtigung — lösen aber das eigentliche Problem
+nicht. Die geometrischen Infrastrukturdaten (Parzellengrenzen, Nutzungsarten,
+Gebäudegrundrisse) sind vollständig trennbar von personenbezogenen
+Eigentümerinformationen. Österreich und die Niederlande trennen genau das:
+Geometriedaten frei zugänglich; Eigentümeridentitäten geschützt. Dass die
+Geometriedaten selbst zurückgehalten werden, ist keine Datenschutzpflicht —
+es ist eine Gebührenpolitik.
+
+Das Kostendeckungsargument hält einem Vergleich ebenfalls nicht stand: Auch
+Ordnance Survey, BEV und Kadaster Nederland hatten Kostendeckungsmodelle —
+und haben diese durch Haushaltsfinanzierung oder Querfinanzierung ersetzt, weil
+der gesellschaftliche Nutzen freier Geodaten die Einnahmen aus Gebühren
+übersteigt.
+
+## Die Abwägung
+
+Der Kern des Problems ist kein technisches, sondern ein kategoriales:
+Werden staatlich erhobene Geodaten als öffentliche Infrastruktur behandelt —
+oder als kommerzielles Produkt?
+
+Deutschland hat diese Frage nicht einheitlich beantwortet. Das Ergebnis ist
+ein Flickenteppich aus 16 Preismodellen, 16 Registrierungsanforderungen und
+16 Open-Data-Reifegraden. NRW und Thüringen haben Teile ihrer Katasterdaten
+freigegeben.<Ref id={7} /><Ref id={8} /> Die Mehrheit der Länder nicht.
+
+Die planerische Konsequenz ist real: Ein Architekturbüro, das für einen
+Bauherren ein Grundstück entwickelt, zahlt für dieselbe öffentliche Information
+unterschiedlich viel — je nachdem, in welchem Bundesland das Grundstück liegt.
+Ein Projektentwickler, der mehrere Bundesländer betreut, unterhält Zugänge zu
+mehreren Portalen, kennt mehrere Gebührenordnungen und wartet auf mehrere
+Antragsbearbeitungen. Ein Forschungsteam, das bundesweite Baulückenanalysen
+durchführen will, muss mit 16 Behörden verhandeln.
+
+Das ist kein kleines Koordinationsproblem. Es ist eine strukturelle Bremse auf
+jedem Planungsprozess — und eine, die sich vollständig vermeiden ließe.
+
+Die EU-INSPIRE-Richtlinie<Ref id={2} /> sollte diesen Zustand beenden. Sie hat es
+nicht getan, weil formale Compliance nicht dasselbe ist wie praktischer
+Freiheitszugang. Wer in Deutschland INSPIRE-konforme Katasterdaten abrufen will,
+findet Metadatenkataloge und Web Map Services — keine Bulk-Downloads ohne
+Registrierung, keine einheitliche nationale Schnittstelle, keinen Preis von Null.
+
+Die Reform ist einfach zu beschreiben: ALKIS-Basisdaten — Parzellengrenzen,
+Flurstücknummern, Nutzungsarten, Gebäudegrundrisse — als bundesweit kostenlos
+downloadbare Open Data, ohne Registrierung, ohne Verwendungszweck. Eigentümerdaten
+bleiben geschützt. Das Modell ist erprobt. Es existiert vier Autostunden entfernt.
