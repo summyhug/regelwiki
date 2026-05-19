@@ -1,0 +1,246 @@
+---
+title: "Cookie-Einwilligungen"
+subtitle: "Deutschland hat zwei parallele Rechtsgrundlagen für Cookies, 16 Datenschutzbehörden mit unterschiedlichen Vollzugsprioritäten und eine EU-Verordnung, die seit 2017 in Brüssel feststeckt. Das Ergebnis sind Banner, die niemand versteht — und Abmahnungen, die Anwaltskanzleien finanzieren."
+slug: cookie-einwilligungen
+domain: datenschutz
+domain_label: "Datenschutz & DSGVO"
+type: flickenteppich
+type_label: "Flickenteppich"
+
+# Jurisdiction
+jurisdiction: mixed
+jurisdiction_label: "EU-Recht (DSGVO) + Bundesrecht (TTDSG) + Ländervollzug (16 Datenschutzbehörden)"
+legal_basis: >
+  DSGVO Art. 6 Abs. 1 lit. a (Einwilligung als Rechtsgrundlage der Verarbeitung),
+  DSGVO Art. 7 (Bedingungen für die Einwilligung: freiwillig, spezifisch, informiert, unmissverständlich),
+  TTDSG § 25 (Einwilligung beim Speichern und Auslesen auf Endeinrichtungen — Umsetzung der ePrivacy-Richtlinie 2002/58/EG),
+  BGH I ZR 7/16 vom 28. Mai 2020 (Planet49 — vorangekreuzte Kästchen ungültig, aktive Einwilligung erforderlich),
+  EuGH C-673/17 vom 1. Oktober 2019 (Planet49 — vorangekreuzte Kästchen verletzen DSGVO und ePrivacy-Richtlinie),
+  LG München I 3 O 17493/20 vom 20. Januar 2022 (Google Fonts ohne Einwilligung = DSGVO-Verstoß durch IP-Übermittlung an US-Server)
+source_url: "https://www.gesetze-im-internet.de/ttdsg/__25.html"
+applies_in: all
+local_variation: true
+
+# Who this affects
+affects:
+  - Alle Websitebetreiber mit Nutzern in Deutschland
+  - E-Commerce-Unternehmen (Analytics, Retargeting, A/B-Testing)
+  - Kleine und mittlere Unternehmen ohne eigene Rechtsabteilung
+  - Anbieter von Consent-Management-Plattformen (OneTrust, Cookiebot, usercentrics)
+  - Abmahnvereine und Rechtsanwälte im Wettbewerbsrecht
+  - Websitebesucher (Benutzerfreundlichkeit)
+
+# Editorial classification
+trade_off_values:
+  side_a: "Schutz der informationellen Selbstbestimmung · Transparenz über Datenweitergabe · Einheitlicher EU-Datenschutzstandard"
+  side_b: "Rechtssicherheit für Websitebetreiber · Verhältnismäßigkeit · Benutzerfreundlichkeit · Innovationsfähigkeit"
+trade_off_current_lean: a
+trade_off_note: >
+  Das Einwilligungserfordernis für Cookies ist dem Grunde nach berechtigt —
+  Nutzer sollen informiert sein, wenn ihre Daten für Werbezwecke gesammelt werden.
+  Die Umsetzung in Deutschland führt jedoch zu einem Normengeflecht aus DSGVO,
+  TTDSG und 16 Länderbehörden mit unterschiedlichen Vollzugsintensitäten, das
+  Rechtssicherheit strukturell verhindert. Die Abmahnbarkeit von Cookie-Verstößen
+  durch private Wettbewerber hat eine Abmahnindustrie erzeugt, die keine
+  datenschutzrechtlichen Schutzinteressen verfolgt.
+
+# Key numbers
+key_numbers:
+  - label: "TTDSG in Kraft getreten"
+    value: "1. Dezember 2021"
+    source: "BGBl. 2021 I, S. 3802"
+  - label: "EU ePrivacy-Verordnung — Kommissionsentwurf"
+    value: "10. Januar 2017 — noch nicht verabschiedet (Stand: 2026)"
+    source: "COM(2017) 10 final"
+  - label: "LG München I — Schadensersatz Google Fonts"
+    value: "100 € Schadensersatz je Verstoß (LG München I 3 O 17493/20)"
+    source: "LG München I, Urteil vom 20. Januar 2022"
+  - label: "BGH Planet49 — Urteil"
+    value: "28. Mai 2020 (I ZR 7/16) — vorangekreuzte Kästchen ungültig"
+    source: "BGH I ZR 7/16"
+
+# Comparators
+comparators:
+  - country: GB
+    country_name: Vereinigtes Königreich
+    summary: >
+      Das britische Information Commissioner's Office (ICO) verfolgt einen
+      risikobasierten Vollzugsansatz: Priorität haben Verstöße, die messbare
+      Schäden für Nutzer erzeugen — nicht technische Formfehler in Cookie-Bannern.
+      Das ICO hat explizite Safe Harbors für First-Party-Analytics kommuniziert,
+      die keine individuelle Re-Identifikation erlauben. Ein eigenes UK-Recht
+      (UK GDPR + PECR) ersetzt seit dem Brexit die EU-Rechtsgrundlage; die
+      Vollzugspraxis ist schlanker und vorhersehbarer als in Deutschland.
+    source: "ICO — Guidance on cookies and similar technologies (2019, aktualisiert 2023); UK GDPR / Privacy and Electronic Communications Regulations 2003 (PECR)"
+  - country: FR
+    country_name: Frankreich
+    summary: >
+      Die CNIL vollzieht aktiv, hat aber klare Leitlinien: Eine „Tout refuser"-Schaltfläche
+      ist auf der ersten Bannerebene erforderlich — aber die CNIL hat gleichzeitig
+      präzise definiert, was als „mesure d'audience exemptée" gilt: anonymisiertes
+      Audience-Measurement, das keine Weitergabe an Dritte beinhaltet, ist von der
+      Einwilligungspflicht ausgenommen. Websitebetreiber in Frankreich wissen,
+      was sie tun müssen und was sie nicht müssen.
+    source: "CNIL — Recommandation cookies et autres traceurs (septembre 2020); délibération n°2022-093"
+  - country: NL
+    country_name: Niederlande
+    summary: >
+      Die Autoriteit Persoonsgegevens (AP) ist aktiv im Vollzug, hat aber
+      zusammen mit dem niederländischen Rundfunkregulator Leitlinien für
+      First-Party-Analytics ohne Einwilligungserfordernis entwickelt, die
+      konkrete technische Anforderungen nennen: keine IP-Vollspeicherung,
+      kein Fingerprinting, keine Weitergabe, kurze Löschfristen.
+      Websitebetreiber können sich an einem definierten Kriterienkatalog
+      orientieren, der nicht in Deutschland existiert.
+    source: "AP — Richtsnoeren Cookiewet (aktualisiert 2023); Richtlijn AP/ACM Analytics-Cookies"
+
+# Reform status
+reform_status: discussed
+reform_status_label: "TTDSG 2021 ohne begleitende Vollzugsharmonisierung; ePrivacy-VO seit 2017 in Brüssel blockiert; kein nationaler Reformentwurf"
+reform_proposals:
+  - "TTDSG und DSGVO zusammenführen: Das doppelte Einwilligungsregime (DSGVO Art. 6/7 + TTDSG § 25) wird durch eine einheitliche nationale Rechtsgrundlage mit einer Einwilligungsdefinition ersetzt — ein Cookie-Banner für beide Gesetze statt zwei parallele Compliance-Prüfungen"
+  - "Safe Harbour für anonymisiertes First-Party-Analytics: Analytics-Dienste, die keine Identifikation einzelner Personen erlauben (keine Weitergabe an Dritte, keine Geräteübergreifendes Tracking, keine IP-Vollspeicherung, Löschfrist max. 30 Tage), werden per Rechtsverordnung vom Einwilligungserfordernis ausgenommen — wie in Frankreich und den Niederlanden"
+  - "Abmahnbarkeit von Cookie-Verstößen auf Behörden beschränken: Cookie-Compliance-Verstöße sind keine wettbewerbsrechtlich abmahnbaren Handlungen — der Vollzug wird ausschließlich den Datenschutzaufsichtsbehörden übertragen, private Abmahnvereine verlieren die Klagebefugnis"
+
+references:
+  - label: "DSGVO Art. 6 — Rechtmäßigkeit der Verarbeitung"
+    url: "https://dsgvo-gesetz.de/art-6-dsgvo/"
+    note: "Einwilligung (lit. a) als eine von sechs Rechtsgrundlagen; bei Cookies und Tracking in der Praxis die relevante Grundlage für nicht notwendige Verarbeitung"
+  - label: "DSGVO Art. 7 — Bedingungen für die Einwilligung"
+    url: "https://dsgvo-gesetz.de/art-7-dsgvo/"
+    note: "Freiwilligkeit, Spezifität, Informiertheit, Unmissverständlichkeit als kumulative Voraussetzungen; Nachweispflicht beim Verantwortlichen"
+  - label: "TTDSG § 25 — Schutz der Privatsphäre bei Endeinrichtungen"
+    url: "https://www.gesetze-im-internet.de/ttdsg/__25.html"
+    note: "Ersetzt § 15 TMG; Einwilligungserfordernis beim Speichern/Auslesen auf Endeinrichtungen (Cookies, Pixel, Fingerprinting) — Ausnahme: technisch unbedingt erforderliche Dienste"
+  - label: "EuGH C-673/17 — Planet49 (1. Oktober 2019)"
+    url: "https://curia.europa.eu/juris/document/document.jsf?docid=218462"
+    note: "Vorangekreuzte Kästchen erfüllen nicht das Einwilligungserfordernis der ePrivacy-Richtlinie und DSGVO; aktives Opt-in erforderlich"
+  - label: "BGH I ZR 7/16 — Planet49 (28. Mai 2020)"
+    url: "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/2020/05/IZR0007-16.html"
+    note: "Umsetzung der EuGH-Vorabentscheidung im deutschen Recht; vorangekreuzte Kästchen für Cookies ungültig"
+  - label: "LG München I 3 O 17493/20 — Google Fonts (20. Januar 2022)"
+    url: "https://www.datenschutz-notizen.de/wp-content/uploads/2022/01/LG-Muenchen-Urteil-Google-Fonts.pdf"
+    note: "Einbindung von Google Fonts per CDN ohne Einwilligung verletzt DSGVO (IP-Übermittlung an US-Server); 100 € Schadensersatz — löste Abmahnwelle aus"
+  - label: "EU ePrivacy-Verordnung — Kommissionsentwurf COM(2017) 10 final"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A52017PC0010"
+    note: "Vorschlag vom 10. Januar 2017 zur Ablösung der ePrivacy-Richtlinie 2002/58/EG; im Rat der EU seit Jahren blockiert — Stand 2026 noch nicht verabschiedet"
+  - label: "CNIL — Recommandation cookies et autres traceurs (2020)"
+    url: "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/lignes-directrices-modificatives-et-recommandation"
+    note: "Französische Leitlinien mit Safe Harbour für anonymisiertes First-Party-Audience-Measurement; kein Einwilligungserfordernis bei definierten technischen Bedingungen"
+  - label: "ICO — Guidance on cookies and similar technologies (UK)"
+    url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/legitimate-interests/what-are-the-rules-on-cookies-and-similar-technologies/"
+    note: "Britischer risikobasierter Vollzugsansatz; klarere Abgrenzung von notwendigen und nicht notwendigen Cookies als im deutschen Recht"
+
+# Metadata
+tags:
+  - cookies
+  - einwilligung
+  - dsgvo
+  - ttdsg
+  - datenschutz
+  - consent-management
+  - abmahnung
+  - eprivacy
+  - cookie-banner
+  - google-fonts
+  - planet49
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Deutsche Websitebetreiber müssen zwei parallele Gesetze einhalten, die dasselbe
+Verhalten regeln und dabei nicht identisch sind. Die DSGVO verlangt eine Einwilligung
+nach Art. 7, wenn personenbezogene Daten verarbeitet werden.<Ref id={1} /><Ref id={2} />
+Das TTDSG § 25 verlangt eine Einwilligung, wenn auf Endeinrichtungen gespeichert
+oder aus ihnen ausgelesen wird — unabhängig davon, ob dabei personenbezogene
+Daten entstehen.<Ref id={3} /> Beide Normen gelten gleichzeitig. Beide haben
+eigene Ausnahmetatbestände. Keine der beiden stellt ausdrücklich klar, wie sie
+mit der anderen zusammenwirkt.
+
+**Was technisch notwendig ist — und was nicht.** Die einzige Ausnahme von
+TTDSG § 25 gilt für Cookies, die für „einen vom Nutzer ausdrücklich gewünschten
+Dienst unbedingt erforderlich" sind. In der Praxis bedeutet das: Session-Cookies,
+Login-Status, Warenkorb, Load-Balancing — kein Banner nötig. Analytics, Werbung,
+A/B-Testing, eingebettete YouTube-Videos, Google Fonts vom Google-CDN — Banner
+nötig, Einwilligung erforderlich. Die Grenze klingt klar; sie ist es nicht.
+Was „unbedingt erforderlich" bedeutet, ist zwischen Datenschutzbehörden,
+Gerichten und Betreibern umstritten.
+
+**Das Planet49-Urteil und seine Folgen.** EuGH und BGH haben 2019 und 2020
+klargestellt: Vorangekreuzte Kästchen erfüllen die Einwilligungsanforderung
+nicht.<Ref id={4} /><Ref id={5} /> Aktives Opt-in ist erforderlich. Der
+„Ablehnen"-Button muss genauso leicht erreichbar sein wie „Akzeptieren" —
+was als gleichwertige Erreichbarkeit gilt, ist seither Gegenstand von Abmahnungen.
+
+**Das Google-Fonts-Urteil und die Abmahnwelle.** Das LG München I entschied
+im Januar 2022: Wer Google Fonts von Googles CDN lädt, überträgt die IP-Adresse
+des Besuchers an US-Server — ohne Einwilligung ein DSGVO-Verstoß, 100 €
+Schadensersatz.<Ref id={6} /> Das Urteil löste eine bundesweite Welle von
+Massenabmahnungen aus: Anwälte schrieben tausende Websitebetreiber an,
+die Google Fonts eingebunden hatten. Die meisten Abgemahnten zahlen; das
+Verfahren ist rentabel. Der Datenschutz von Websitebesuchern verbessert
+sich dadurch nicht.
+
+**Vollzug nach Bundesland.** Das Hamburgische Beauftragte für Datenschutz
+und Informationsfreiheit und der Landesbeauftragte für den Datenschutz
+Baden-Württemberg sind in Deutschland besonders aktive Vollzugsbehörden.
+Andere Länderbehörden priorisieren Cookie-Compliance kaum. Welchen Maßstäben
+ein Websitebetreiber faktisch ausgesetzt ist, hängt davon ab, wo sein
+Unternehmen ansässig ist — nicht davon, was das Gesetz bundeseinheitlich vorschreibt.
+
+## Warum es diese Regelung gibt
+
+Die ePrivacy-Richtlinie von 2002 wurde in einer Zeit entworfen, als Cookies
+hauptsächlich für technische Session-Verwaltung verwendet wurden. Die Revision
+von 2009 reagierte auf das aufkommende Tracking-Geschäftsmodell: Nutzer sollten
+erfahren und selbst entscheiden, wenn ihre Bewegungsdaten für Werbezwecke gesammelt
+werden. Das ist ein legitimes Ziel.
+
+Das TTDSG von 2021 setzt diese Richtlinie im deutschen Bundesrecht um — parallel
+zur DSGVO, die seit 2018 gilt.<Ref id={3} /> Die Doppelung war vermeidbar:
+Der Gesetzgeber hätte das Einwilligungsregime in einer einzigen Norm zusammenführen
+können. Das ist nicht geschehen. Stattdessen gibt es jetzt zwei Einwilligungsdefinitionen,
+zwei Ausnahmetatbestände und zwei Rechtsgrundlagen, die Juristen im Einzelfall
+abgleichen müssen.
+
+Die EU-Kommission weiß, dass das System suboptimal ist. Der Entwurf für eine
+ePrivacy-Verordnung, der die Richtlinie ablösen und mit der DSGVO harmonisieren
+sollte, liegt seit dem 10. Januar 2017 vor.<Ref id={7} /> Im Rat der EU wird
+er seitdem verhandelt, verschoben, neu verhandelt. Stand 2026 ist die Verordnung
+nicht verabschiedet. Das nationale TTDSG bleibt in Kraft, und die DSGVO bleibt
+parallel anwendbar.
+
+## Die Abwägung
+
+Das Ergebnis ist kein schlechtes Recht — es ist kein Recht. Es ist eine
+Konstellation, in der niemand verlässlich weiß, was er tun muss: nicht der
+Betreiber eines mittelständischen Onlineshops, nicht der Entwickler einer
+Vereinswebsite, nicht der Anwalt, der die Cookie-Richtlinie formuliert.
+Die Unsicherheit ist der Zustand, nicht die Ausnahme.
+
+**Frankreich und die Niederlande haben das lösbare Problem gelöst.**<Ref id={8} /><Ref id={9} />
+Die CNIL hat für anonymisiertes First-Party-Audience-Measurement eine explizite
+Ausnahme geschaffen: Wer keine Daten weitergibt, kein geräteübergreifendes
+Tracking betreibt und IP-Adressen nicht vollständig speichert, braucht keinen
+Banner für Analytics. Das Ergebnis ist ein System, das Nutzerrechte schützt
+und Websitebetreibern gleichzeitig sagt, was sie tun dürfen. In Deutschland
+gibt es diese Klarheit nicht.
+
+**Das Abmahnwesen macht die Lage schlechter, nicht besser.** Das Google-Fonts-Urteil<Ref id={6} />
+hat nicht dazu geführt, dass Websitebetreiber ihre Datenschutzpraxis verbessert
+haben — es hat dazu geführt, dass Anwaltskanzleien Massenabmahnungen verschickt
+haben. Der datenschutzrechtliche Vollzug durch private Wettbewerber und Abmahnvereine
+ist in einem strukturellen Interessenkonflikt: Das Ziel ist nicht der Schutz von
+Nutzern, sondern die Generierung von Honorareinnahmen. Die Datenschutzbehörden
+sind nach dem TTDSG die zuständigen Vollzugsbehörden — die Abmahnbarkeit durch
+Private ist ein Artefakt des UWG-Rechts, das in diesem Kontext keinen Schutzweck
+erfüllt.
+
+**Die ePrivacy-Blockade in Brüssel ist das eigentliche Grundproblem.**<Ref id={7} />
+Solange die EU-Verordnung nicht verabschiedet ist, bleibt die Rechtslage in
+Deutschland ein nationales Provisorium, das auf einer Richtlinie von 2009
+basiert. Kein Mitgliedstaat hat einen Anreiz, allein zu harmonisieren — das
+Ergebnis ist ein europäisches Flickenteppich-System, in dem ein Pariser
+Websitebetreiber nach anderen Regeln arbeitet als ein Münchner.

@@ -1,0 +1,245 @@
+---
+title: "SCHUFA-Scoring"
+subtitle: "Eine private Gesellschaft, mehrheitlich im Besitz der Banken, die ihre Scores nutzen, entscheidet über Wohnung, Handyvertrag und Kredit von 68 Millionen Menschen — ohne Opt-out, ohne offengelegten Algorithmus."
+slug: schufa
+domain: datenschutz
+domain_label: "Datenschutz & DSGVO"
+type: interessenkonflikt
+type_label: "Interessenkonflikt"
+
+# Jurisdiction
+jurisdiction: federal
+jurisdiction_label: "Bundesrecht (BDSG) + EU-Recht (DSGVO)"
+legal_basis: >
+  Art. 6, 15, 17, 22 DSGVO (Datenschutz-Grundverordnung);
+  § 31 BDSG (Schutzvorschrift für Scoring);
+  § 35 BDSG (Berichtigung, Löschung und Einschränkung der Verarbeitung);
+  EuGH C-634/21 (SCHUFA Holding AG, Oktober 2023);
+  BGH VI ZR 225/21
+source_url: "https://www.gesetze-im-internet.de/bdsg_2018/__31.html"
+applies_in: all
+local_variation: false
+
+# Who this affects
+affects:
+  - Ca. 68 Millionen Personen mit SCHUFA-Datensatz in Deutschland
+  - Neu Zugezogene und Immigranten ohne SCHUFA-Historie
+  - Mieter (Vermieter verlangen regelmäßig SCHUFA-Auskunft)
+  - Kreditnehmer, Mobilfunkkunden, Kontoinhaber
+  - Banken und Kreditinstitute (Eigentümer und Hauptnutzer)
+
+# Editorial classification
+trade_off_values:
+  side_a: "Kreditrisikobewertung · Schutz der Kreditgeber vor Zahlungsausfall · Funktionsfähigkeit des Kreditmarkts"
+  side_b: "Informationelle Selbstbestimmung · Transparenz algorithmischer Entscheidungen · Gleichbehandlung ohne Diskriminierung durch Datenlücken"
+trade_off_current_lean: a
+trade_off_note: >
+  Das Scoring-System dient legitimen Zwecken der Kreditrisikoeinschätzung.
+  Das Problem liegt nicht im Scoring an sich, sondern im Interessenkonflikt
+  der Eigentümerstruktur, in der Intransparenz des Algorithmus und in
+  Löschfristen, die keine EU-Vorgabe haben — sondern deutschen Sonderweg
+  darstellen.
+
+# Key numbers
+key_numbers:
+  - label: "Personen mit SCHUFA-Datensatz"
+    value: "ca. 68 Millionen"
+    source: "SCHUFA Holding AG — Geschäftsbericht 2022"
+  - label: "Gespeicherte Einzeldatensätze"
+    value: "ca. 1 Milliarde"
+    source: "SCHUFA Holding AG — Geschäftsbericht 2022"
+  - label: "Nachzahlungsfrist bis Löschung bezahlter Schulden (§ 35 BDSG)"
+    value: "3 Jahre"
+    source: "§ 35 BDSG i.V.m. SCHUFA-Verhaltenskodex"
+  - label: "Sichtbarkeit von Kreditanfragen (Hard Inquiry)"
+    value: "12 Monate"
+    source: "SCHUFA-Informationsblatt zur Datenspeicherung"
+  - label: "Löschfrist nach Restschuldbefreiung (Insolvenz)"
+    value: "6 Jahre nach Erteilung"
+    source: "SCHUFA-Verhaltenskodex; BGH IX ZB 258/20"
+
+# Comparators
+comparators:
+  - country: GB
+    country_name: Vereinigtes Königreich
+    summary: >
+      In Großbritannien gibt es drei konkurrierende Kreditauskunfteien —
+      Experian, Equifax und TransUnion. Verbraucher können ihren Score bei
+      allen drei kostenlos abrufen. Der Wettbewerb erzeugt einen gewissen
+      Druck auf Transparenz und Datenqualität. Widerspruchsverfahren sind
+      klar geregelt; falsche Einträge müssen innerhalb definierter Fristen
+      korrigiert werden. Ein institutioneller Interessenkonflikt wie bei
+      der SCHUFA — Gläubiger als Eigentümer der Auskunftei — besteht
+      strukturell in geringerem Ausmaß.
+    source: "UK Consumer Credit Act 1974; Information Commissioner's Office — Credit Reference Agencies guidance"
+  - country: US
+    country_name: Vereinigte Staaten
+    summary: >
+      Der Fair Credit Reporting Act (FCRA) schreibt vor, dass negative
+      Einträge nach sieben Jahren gelöscht werden müssen — unabhängig
+      davon, ob die Schuld bezahlt wurde oder nicht. Das ist kürzer als
+      Deutschlands dreijährige Frist nach Begleichung. Zudem haben
+      Verbraucher ein einklagbares Recht auf Berichtigung und auf eine
+      kostenlose Jahresauskunft bei allen drei großen Bureaus. Der FCRA
+      enthält explizit ein privates Klagerecht — ein Anreiz, der in
+      Deutschland fehlt.
+    source: "Fair Credit Reporting Act (15 U.S.C. § 1681 et seq.); Consumer Financial Protection Bureau"
+  - country: FR
+    country_name: Frankreich
+    summary: >
+      Frankreich betreibt kein privates Scoring-System für
+      Privatkreditnehmer. Die Banque de France führt das
+      Fichier des incidents de remboursement des crédits aux particuliers
+      (FICP) — ein staatliches Register, das ausschließlich negative
+      Ereignisse (Zahlungsausfälle, Verbraucherinsolvenz) erfasst.
+      Positive Kredithistorie wird nicht gesammelt. Eintragungen werden
+      nach Begleichung der Schuld gelöscht — keine Wartefrist.
+      Ein proprietärer Algorithmus, der aus Datenpunkten einen Score
+      berechnet, existiert in dieser Form nicht.
+    source: "Code monétaire et financier Art. L. 751-1 ff. (FICP); Banque de France"
+
+# Reform status
+reform_status: litigated
+reform_status_label: "EuGH-Urteil Oktober 2023; BGH-Vorlage an VG Wiesbaden; praktische Änderungen bisher minimal"
+reform_proposals:
+  - "Löschfristen verkürzen: Bezahlte Forderungen sollten unmittelbar oder spätestens nach 12 Monaten gelöscht werden — die dreijährige Nachhaftung nach Tilgung hat keine EU-rechtliche Grundlage und geht über das zur Kreditrisikobewertung Erforderliche hinaus"
+  - "Algorithmus offenlegen: SCHUFA muss die materiellen Faktorkategorien und ihre Gewichtung im Scoring-Modell veröffentlichen — nicht als Betriebsgeheimnis schützbar, soweit diese Informationen zur Wahrnehmung der Rechte aus Art. 22 DSGVO erforderlich sind"
+  - "Art. 22 DSGVO durchsetzen: Kreditgeber, Vermieter und Mobilfunkanbieter dürfen Verträge nicht allein auf Basis eines automatisierten SCHUFA-Scores ablehnen — ohne menschliche Überprüfung im Einzelfall verstößt jede solche Ablehnung gegen Art. 22 Abs. 1 DSGVO"
+
+references:
+  - label: "EuGH C-634/21 — SCHUFA Holding AG / Datenschutzbeauftragter Hessen (Oktober 2023)"
+    url: "https://curia.europa.eu/juris/document/document.jsf?docid=278795"
+    note: "Automatisiertes SCHUFA-Scoring kann als eigenständige Entscheidung i.S.v. Art. 22 DSGVO zu werten sein; Vorlagefrage durch Verwaltungsgericht Wiesbaden"
+  - label: "BGH VI ZR 225/21 — Vorlage an EuGH; nach Urteil zurückverwiesen"
+    url: "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2023/2023195.html"
+    note: "BGH hat die Rechtsfrage dem EuGH vorgelegt und nach dessen Urteil an das Verwaltungsgericht Wiesbaden zurückverwiesen"
+  - label: "Art. 22 DSGVO — Automatisierte Entscheidungen im Einzelfall"
+    url: "https://dsgvo-gesetz.de/art-22-dsgvo/"
+    note: "Verbot automatisierter Entscheidungen mit erheblichen Auswirkungen auf Personen; Kernorm des EuGH-Urteils C-634/21"
+  - label: "Art. 15 DSGVO — Auskunftsrecht der betroffenen Person"
+    url: "https://dsgvo-gesetz.de/art-15-dsgvo/"
+    note: "Recht auf kostenlose Jahresauskunft über gespeicherte Daten — bei SCHUFA über BonitätsAuskunft.de abrufbar"
+  - label: "§ 31 BDSG — Schutzvorschrift für das Scoring"
+    url: "https://www.gesetze-im-internet.de/bdsg_2018/__31.html"
+    note: "Nationale Umsetzung: Scoring nur auf Basis nachweislich sachlich zutreffender und relevanter Daten; keine ausdrückliche Algorithmustransparenz"
+  - label: "§ 35 BDSG — Berichtigung, Löschung und Einschränkung"
+    url: "https://www.gesetze-im-internet.de/bdsg_2018/__35.html"
+    note: "Rechtsgrundlage für die dreijährige Speicherfrist bezahlter Forderungen nach Tilgung"
+  - label: "SCHUFA Holding AG — Geschäftsbericht 2022"
+    url: "https://www.schufa.de/ueber-uns/presse-news/pressemitteilungen/"
+    note: "68 Mio. betroffene Personen, ca. 1 Mrd. Einzeldatensätze; Eigentümerstruktur: Banken, Sparkassen, Volksbanken, Handelsunternehmen"
+  - label: "Fair Credit Reporting Act — 15 U.S.C. § 1681 (USA)"
+    url: "https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act"
+    note: "Sieben-Jahres-Löschfrist für negative Einträge; privates Klagerecht bei Verstößen; drei konkurrierende Bureaus"
+
+# Metadata
+tags:
+  - schufa
+  - scoring
+  - dsgvo
+  - datenschutz
+  - kredit
+  - automatisierte-entscheidung
+  - interessenkonflikt
+  - art-22
+  - bdsg
+  - eugh
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Die SCHUFA Holding AG speichert Kreditdaten zu rund 68 Millionen Personen
+in Deutschland — nahezu jede erwachsene Person im Land.<Ref id={7} /> Aus
+diesen Daten berechnet sie einen Score: eine Kennzahl, die ausdrückt, wie
+wahrscheinlich es ist, dass jemand eine Verbindlichkeit bedient. Dieser
+Score entscheidet in der Praxis darüber, ob eine Wohnung vermietet wird,
+ob ein Mobilfunkvertrag zustande kommt, ob eine Bank einen Kredit gewährt.
+
+Was die SCHUFA speichert, ist in der Struktur bekannt: Zahlungshistorie,
+laufende und abgeschlossene Kreditverträge, Girokonten, Kreditanfragen,
+Adresswechsel. Was sie nicht speichert: Einkommen, Vermögen,
+Beschäftigungsstatus. Der Score entsteht also nicht aus einem Bild
+finanzieller Leistungsfähigkeit, sondern aus dem Muster vergangener
+Zahlungsereignisse — und aus dem Fehlen negativer Ereignisse.
+
+Eine bezahlte Schuld bleibt drei Jahre im System.<Ref id={6} /> Wer eine
+Forderung begleicht, erhält damit keine bereinigte Akte, sondern eine
+Akte mit einem positiv abgeschlossenen Negativeintrag — der noch 36
+Monate Scoring-Wirkung entfaltet. Insolvenzeinträge bleiben sechs Jahre
+nach Erteilung der Restschuldbefreiung gespeichert.<Ref id={6} /> Für
+diese Fristen gibt es keine EU-rechtliche Vorgabe. Sie entstammen dem
+SCHUFA-eigenen Verhaltenskodex sowie § 35 BDSG — einer nationalen
+Regelung, die über das datenschutzrechtlich Erforderliche hinausgeht.<Ref id={6} />
+
+Wer neu nach Deutschland zuzieht, hat keine SCHUFA-Geschichte. Keine
+Geschichte wird im System wie eine schlechte Geschichte behandelt:
+Kein Wert bedeutet kein Signal, kein Signal bedeutet Risiko. Immigranten
+ohne SCHUFA-Historie scheitern regelmäßig bei der Wohnungssuche und
+bei der Kontoeröffnung — nicht weil sie zahlungsunfähig wären, sondern
+weil das Modell ihre Bonität nicht erfassen kann.
+
+## Warum es diesen Interessenkonflikt gibt
+
+Die SCHUFA ist keine Behörde und kein staatliches Register. Sie ist eine
+privatrechtliche Gesellschaft, deren Anteilseigner mehrheitlich die
+Institute sind, die ihre Scores verwenden: Sparkassen, Volksbanken,
+Geschäftsbanken und Handelsunternehmen.<Ref id={7} /> Dieselben Institutionen,
+die Kreditentscheidungen auf Basis des SCHUFA-Scores treffen, besitzen
+die Gesellschaft, die den Score produziert.
+
+Das schafft eine strukturelle Asymmetrie: Der Gläubiger profitiert von
+einem niedrigen Score des Schuldners — er kann Kredite ablehnen oder
+zu höheren Konditionen vergeben. Der Eigentümer der Auskunftei hat
+keinen Anreiz, das Modell zugunsten der Verbraucher zu kalibrieren.
+Fehler im Algorithmus, die systematisch zu niedrigen Scores führen,
+sind für die Eigentümer kein Schaden — sie sind ein Vorteil.
+
+Der Algorithmus selbst ist nicht öffentlich. § 31 BDSG schreibt vor,
+dass Scoring nur auf der Basis nachweislich sachlich zutreffender und
+relevanter Daten erfolgen darf.<Ref id={5} /> Was sachlich zutrifft und
+relevant ist, definiert die SCHUFA. Welche Faktoren mit welcher Gewichtung
+in den Score einfließen, ist als Geschäftsgeheimnis geschützt. Betroffene
+können die Auskunft über ihre gespeicherten Daten nach Art. 15 DSGVO
+einfordern<Ref id={4} /> — aber nicht erfahren, warum ihr Score so ist,
+wie er ist.
+
+## Der rechtliche Rahmen und seine Lücken
+
+Art. 22 Abs. 1 DSGVO verbietet Entscheidungen, die ausschließlich auf
+automatisierter Verarbeitung beruhen und rechtliche oder ähnlich
+erhebliche Auswirkungen auf Personen haben.<Ref id={3} /> Ob das
+SCHUFA-Scoring darunter fällt, war lange umstritten. Das Verwaltungsgericht
+Wiesbaden legte dem Bundesgerichtshof eine Frage vor; der BGH (VI ZR 225/21)
+leitete sie an den Europäischen Gerichtshof weiter.<Ref id={2} />
+
+Im Oktober 2023 entschied der EuGH in der Rechtssache C-634/21: Wenn
+eine Bank einen Kreditantrag allein auf Basis des SCHUFA-Scores ablehnt
+und der Score selbst das entscheidende Element ist, kann bereits die
+Übermittlung des Scores durch die SCHUFA als automatisierte Entscheidung
+im Sinne von Art. 22 DSGVO einzustufen sein — mit der Folge, dass sie
+ohne ausdrückliche Einwilligung oder sonstige Ausnahmetatbestände
+unzulässig wäre.<Ref id={1} /> Der EuGH hat damit nicht das Scoring
+verboten, aber die Bedingung gesetzt: Eine menschliche Überprüfung muss
+stattfinden, bevor ein Score zu einer Ablehnung führt.
+
+Der BGH verwies die Sache zurück an das Verwaltungsgericht Wiesbaden.<Ref id={2} />
+Stand 2025 hat das Urteil die Praxis kaum verändert. Vermieter fordern
+weiterhin SCHUFA-Auskünfte. Banken implementieren weiterhin
+Score-basierte automatische Ablehnungen. Die Datenschutzaufsichtsbehörden
+haben keine systematische Durchsetzung eingeleitet.
+
+Im internationalen Vergleich fällt auf: In den USA schreibt der Fair
+Credit Reporting Act eine Sieben-Jahres-Löschfrist für negative Einträge
+vor — unabhängig davon, ob die Schuld bezahlt wurde — und gibt
+Verbrauchern ein privates Klagerecht bei Verstößen.<Ref id={8} />
+Frankreich betreibt mit dem FICP ein staatliches Negativregister, das
+nach Begleichung sofort löscht und keinen proprietären Score-Algorithmus
+kennt. Großbritannien reguliert drei konkurrierende Auskunfteien mit
+klaren Widerspruchsverfahren.<Ref id={8} />
+
+Die deutsche Lösung — ein privatrechtlicher Monopolist im Besitz seiner
+Hauptnutzer, mit geschütztem Algorithmus und Löschfristen über EU-Niveau —
+ist kein zwingend aus dem Datenschutzrecht folgendes Ergebnis. Sie ist
+das Ergebnis unterlassener Regulierung.

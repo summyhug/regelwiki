@@ -1,0 +1,272 @@
+---
+title: "Auftragsverarbeitung (AVV)"
+subtitle: "DSGVO Art. 28 verlangt einen schriftlichen Vertrag für jede Software-as-a-Service-Nutzung. Ein Fünf-Personen-Startup mit Standard-SaaS-Stack hat sieben AVV-Pflichten — und ahnt es meist nicht."
+slug: auftragsverarbeitung
+domain: datenschutz
+domain_label: "Datenschutz & DSGVO"
+type: zeitgeist-problem
+type_label: "Zeitgeist-Problem"
+
+# Jurisdiction
+jurisdiction: mixed
+jurisdiction_label: "EU-Recht (DSGVO) + bilateral EU-US Data Privacy Framework"
+legal_basis: >
+  Art. 28 DSGVO (Auftragsverarbeiter — Vertragspflicht, Mindestinhalte, Sub-Auftragsverarbeiter),
+  Art. 29 DSGVO (Weisungsgebundenheit des Auftragsverarbeiters),
+  Art. 30 DSGVO (Verzeichnis von Verarbeitungstätigkeiten),
+  Art. 46 DSGVO (Geeignete Garantien bei Drittlandübermittlungen — SCCs, angemessener Beschluss),
+  Art. 83 Abs. 4 DSGVO (Bußgeld bis €10 Mio. oder 2 % des Jahresumsatzes bei Art.-28-Verstößen),
+  Durchführungsbeschluss (EU) 2021/914 (Standard-Vertragsklauseln für internationale Datenübermittlung),
+  Angemessenheitsbeschluss EU-US Data Privacy Framework, 10. Juli 2023 (C(2023) 4745)
+source_url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679#d1e3435-1-1"
+applies_in: all
+local_variation: false
+
+# Who this affects
+affects:
+  - Jedes Unternehmen und jede Selbstständige, die personenbezogene Daten in Cloud-Diensten verarbeiten
+  - Startups und KMU mit Standard-SaaS-Stack (Google Workspace, Slack, AWS, Mailchimp, HubSpot, Zoom, Calendly u. a.)
+  - Freiberufler mit Kunden-E-Mail-Verteiler oder Newsletter-Tool
+  - Datenschutzbeauftragte und Compliance-Verantwortliche in mittelständischen Unternehmen
+  - Non-Profit-Organisationen mit Mitgliederverwaltung oder Spendentools
+
+# Editorial classification
+trade_off_values:
+  side_a: "Kontrolle über Datenschutz-Kette · Verantwortlichkeit für Unterauftragsverarbeiter · Schutz der betroffenen Personen bei outgesourcten Verarbeitungen"
+  side_b: "Administrativer Aufwand ohne Schutzwirkung · Papierverträge für vorformulierte SaaS-Massenverträge · Proportionalitätsproblem für Kleinstbetriebe"
+trade_off_current_lean: a
+trade_off_note: >
+  Art. 28 DSGVO wurde für klassische IT-Outsourcing-Verhältnisse entworfen:
+  Unternehmen, die Rechenzentren, Payroll-Prozessoren oder externe CRM-Dienstleister
+  beauftragen — Verarbeitungen, bei denen ein individueller Vertrag tatsächlich
+  die Bedingungen mitgestalten kann. Auf die heutige SaaS-Realität angewendet,
+  entsteht ein strukturelles Missverhältnis: Der AVV-Pflicht steht kein
+  verhandlungsfähiges Vertragsverhältnis gegenüber, sondern ein "Akzeptieren"-Button
+  in den Admineinstellungen von Google Workspace.
+
+# Key numbers
+key_numbers:
+  - label: "Standard-SaaS-Stack eines Fünf-Personen-Startups (Beispiel)"
+    value: "7 AVV-Pflichten: Google Workspace, Slack, AWS, Mailchimp, HubSpot, Calendly, Zoom"
+    source: "DSGVO Art. 28 Abs. 1 — jeder Auftragsverarbeiter benötigt einen schriftlichen AVV"
+  - label: "Sub-Prozessoren von Google Workspace"
+    value: "über 50 akkreditierte Sub-Auftragsverarbeiter (Stand 2025)"
+    source: "Google Workspace Subprocessors-Liste — workspace.google.com/intl/de/terms/subprocessors.html"
+  - label: "Maximales Bußgeld bei Art.-28-Verletzung"
+    value: "€10 Mio. oder 2 % des weltweiten Jahresumsatzes — je nachdem, was höher ist"
+    source: "Art. 83 Abs. 4 DSGVO"
+  - label: "Schrems II — EuGH C-311/18, Urteil"
+    value: "16. Juli 2020 — EU-US Privacy Shield für ungültig erklärt; TIA-Pflicht für alle US-Transfers"
+    source: "EuGH, C-311/18, Data Protection Commissioner v. Facebook Ireland und Schrems"
+  - label: "EU-US Data Privacy Framework — Angemessenheitsbeschluss"
+    value: "10. Juli 2023 — gilt nur für zertifizierte US-Unternehmen; von Max Schrems bereits angefochten"
+    source: "Europäische Kommission, C(2023) 4745; NOYB-Klage, Rechtssache T-554/23"
+
+# Comparators
+comparators:
+  - country: US
+    country_name: Vereinigte Staaten
+    summary: >
+      Die USA haben kein sektorübergreifendes Bundesdatenschutzgesetz.
+      Data Processing Agreements sind nicht gesetzlich vorgeschrieben —
+      sie entstehen vertraglich, wenn der Auftraggeber ausreichend
+      Verhandlungsmacht hat. Für SaaS-Massenverträge fehlt diese Verhandlungsmacht
+      strukturell: Wer Google Workspace oder Slack nutzt, akzeptiert die
+      vom Anbieter vorgegebenen Terms. Datenschutz wird als Vertragsfreiheit
+      und Wettbewerbsthema behandelt, nicht als Verwaltungspflicht.
+      Der CCPA (Kalifornien) enthält eine Data Processing Agreement-Anforderung
+      für "Service Providers" — aber ohne die formale Prüfpflicht und das
+      Bußgeldsystem der DSGVO.
+    source: "California Consumer Privacy Act (CCPA) § 1798.140(ag); FTC Act Section 5"
+  - country: CH
+    country_name: Schweiz
+    summary: >
+      Das revidierte Schweizer Datenschutzgesetz (revDSG, in Kraft seit
+      1. September 2023) enthält in Art. 9 eine Pflicht zur Sorgfaltsprüfung
+      bei Auftragsbearbeitung — aber ohne die strenge Schriftlichkeitspflicht
+      und Mindestinhalts-Checkliste der DSGVO Art. 28. Für Kleinunternehmen
+      unter 250 Mitarbeitenden gilt eine erheblich reduzierte Pflicht für
+      das Bearbeitungsverzeichnis (Art. 12 revDSG). Die Schweiz hat damit
+      explizit eine Proportionalitätsschwelle eingebaut, die die DSGVO fehlt.
+    source: "Bundesgesetz über den Datenschutz (revDSG), SR 235.1, Art. 9, 12; EDÖB-Erläuterungen 2023"
+
+# Reform status
+reform_status: none
+reform_status_label: "Keine EU-weite Reform in Sicht; Schrems-III-Risiko für EU-US DPF weiter offen"
+reform_proposals:
+  - "De-minimis-Schwelle einführen: Die AVV-Pflicht gilt nicht für Unternehmen unter einem definierten Schwellenwert (z.B. unter 50 Mitarbeitende oder unter €10 Mio. Jahresumsatz), die ausschließlich standardisierte SaaS-Massenverträge nutzen. Eine Freelancerin mit Mailchimp-Newsletter braucht keinen geprüften AVV — sie kann keinen aushandeln, und der Click-Through-DPA verändert sich nicht durch ihre Unterschrift."
+  - "Akkreditierte Standard-AVV als sicherer Hafen: Die EU-Kommission akkreditiert Standard-DPA-Templates für verbreitete SaaS-Kategorien — analog zu den Standard-Vertragsklauseln für Drittlandübermittlungen. Wer einen akkreditierten DPA akzeptiert, gilt ohne weitere Prüfpflicht als Art.-28-konform. Das Prüfungsrisiko verlagert sich von tausenden Kleinstbetrieben auf die Akkreditierungsbehörde."
+  - "EU-US-Transfers strukturell absichern (Schrems-III-Vorsorge): Die EU-Kommission sollte den Data Privacy Framework durch legislative Verankerung stabiler gestalten — nicht als reinen Exekutivbeschluss, der durch ein EuGH-Urteil wieder zu Fall gebracht werden kann. Solange dieser Rahmen existenziell von jedem neuen Verfahren abhängt, bleibt die Nutzung US-amerikanischer SaaS-Tools für europäische Unternehmen ein unkalkulierbares Rechtsrisiko."
+
+references:
+  - label: "Art. 28 DSGVO — Auftragsverarbeiter"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679#d1e3435-1-1"
+    note: "Kernpflicht: schriftlicher Vertrag mit Mindestinhalten (Gegenstand, Dauer, Art und Zweck der Verarbeitung, Kategorien personenbezogener Daten, Pflichten und Rechte des Verantwortlichen); Abs. 2: Genehmigungspflicht für Sub-Auftragsverarbeiter"
+  - label: "Art. 46 DSGVO — Datenübermittlung vorbehaltlich geeigneter Garantien"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679#d1e4001-1-1"
+    note: "Rechtsgrundlagen für Drittlandtransfers: Angemessenheitsbeschluss, Standard-Vertragsklauseln (SCCs), verbindliche interne Datenschutzvorschriften (BCR)"
+  - label: "Art. 83 Abs. 4 DSGVO — Bußgeld bei Art.-28-Verletzungen"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679#d1e6046-1-1"
+    note: "Bis €10 Mio. oder 2 % des weltweiten Jahresumsatzes — niedrigere Bußgeldkategorie (gegenüber Art. 83 Abs. 5 mit 4 %); in der Praxis fokussieren Aufsichtsbehörden auf schwerwiegendere Verstöße"
+  - label: "EuGH C-311/18 — Schrems II (16. Juli 2020)"
+    url: "https://curia.europa.eu/juris/document/document.jsf?docid=228677"
+    note: "EU-US Privacy Shield für ungültig erklärt; SCCs bleiben grundsätzlich gültig, aber mit obligatorischer Transfer Impact Assessment (TIA) für jeden US-Transfer; massiver Compliance-Aufwand für alle Nutzer US-amerikanischer SaaS-Dienste"
+  - label: "EU-US Data Privacy Framework — Angemessenheitsbeschluss (10. Juli 2023)"
+    url: "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_de"
+    note: "Gilt nur für nach DPF zertifizierte US-Unternehmen; von NOYB (Max Schrems) vor dem EuGH angefochten (T-554/23); strukturell gefährdeter als ein legislativer Rechtsrahmen"
+  - label: "Durchführungsbeschluss (EU) 2021/914 — Standard-Vertragsklauseln (SCCs)"
+    url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32021D0914"
+    note: "Neue SCCs seit 27. September 2021; ersetzen die alten SCCs aus 2001/2004; modularer Aufbau für verschiedene Übermittlungskonstellationen; auch Grundlage für TIA-Pflicht nach Schrems II"
+  - label: "EDPB — Leitlinien 07/2020 zu den Begriffen 'Verantwortlicher' und 'Auftragsverarbeiter'"
+    url: "https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-072020-concepts-controller-and-processor-gdpr_de"
+    note: "Maßgebliche Auslegung des EDPB zur Abgrenzung Verantwortlicher / Auftragsverarbeiter — relevant für die Frage, welche SaaS-Beziehungen überhaupt unter Art. 28 fallen"
+  - label: "revDSG (Schweiz) Art. 9, 12 — Auftragsbearbeitung und Bearbeitungsreglement"
+    url: "https://www.fedlex.admin.ch/eli/cc/2022/491/de"
+    note: "Schweizer Gegenmodell: Auftragsbearbeitungspflicht ohne starre Schriftlichkeits-Checkliste; explizite KMU-Ausnahme für das Bearbeitungsverzeichnis (Unternehmen unter 250 MA)"
+
+# Metadata
+tags:
+  - auftragsverarbeitung
+  - avv
+  - dsgvo
+  - art-28
+  - datenschutz
+  - schrems-ii
+  - data-privacy-framework
+  - scc
+  - saas
+  - drittlandtransfer
+  - kmu
+last_reviewed: "2026-05"
+card_version: 1
+---
+
+## Was es bedeutet
+
+Wer als Unternehmen oder Selbstständige personenbezogene Daten nicht selbst
+verarbeitet, sondern dafür externe Dienstleister einsetzt, ist nach
+Art. 28 DSGVO verpflichtet, mit jedem dieser Dienstleister einen schriftlichen
+Auftragsverarbeitungsvertrag (AVV) zu schließen.<Ref id={1} /> Der AVV muss
+Mindestinhalte enthalten: Gegenstand und Dauer der Verarbeitung, Art und Zweck,
+die Kategorien betroffener Personen und Daten, die Pflichten des Auftragsverarbeiters.
+Der Auftragsverarbeiter darf Daten ausschließlich nach Weisung des Verantwortlichen
+verarbeiten.<Ref id={1} />
+
+**Was das in der Praxis bedeutet.**
+Ein Fünf-Personen-Startup mit einem typischen SaaS-Stack —
+Google Workspace für E-Mail und Dokumente, Slack für interne Kommunikation,
+AWS für Hosting, Mailchimp für Newsletter, HubSpot als CRM, Calendly für
+Terminbuchungen, Zoom für Videokonferenzen — hat sieben separate AVV-Pflichten.
+Hinzu kommen Sub-Auftragsverarbeiter: Google Workspace allein führt über
+fünfzig akkreditierte Unterauftragnehmer; Art. 28 Abs. 2 verlangt,
+dass der Verantwortliche deren Einsatz genehmigt hat.<Ref id={1} />
+
+In der Praxis sieht die Erfüllung so aus: Der Systemadministrator
+klickt in den Admin-Einstellungen auf "DPA akzeptieren". Google,
+Slack, AWS und die anderen großen Anbieter stellen vorformulierte
+DPA-Templates bereit — rechtlich sorgfältig ausgearbeitet und
+einseitig zugunsten des Anbieters formuliert. Der Vertragsinhalt
+ist nicht verhandelbar. Die "Prüfpflicht" des Verantwortlichen
+läuft auf die Frage hinaus, ob er ein 30-seitiges englischsprachiges
+Dokument gelesen hat, das er ohnehin nicht ändern kann.
+
+**Das Schrems-II-Erbe.**
+Mit dem EuGH-Urteil vom 16. Juli 2020 (C-311/18)<Ref id={4} /> erklärte
+der Gerichtshof das EU-US Privacy Shield für ungültig. US-Behörden
+haben nach US-Recht weitreichende Zugriffsrechte auf Daten, die
+europäische Unternehmen an US-Dienste übertragen. Dieser Zugriff
+ist mit EU-Datenschutzrecht strukturell unvereinbar.
+
+Das Urteil löste eine Compliance-Welle aus: Für jeden Einsatz
+eines US-amerikanischen SaaS-Dienstes waren seitdem Standard-Vertragsklauseln
+(SCCs) und eine Transfer Impact Assessment (TIA) erforderlich —
+eine dokumentierte Risikoabwägung, ob der spezifische Transfer
+trotz der US-Rechtslage schutzwürdig bleibt.<Ref id={5} /> Die meisten
+kleinen und mittleren Unternehmen haben diese Assessments nie
+erstellt; die meisten wussten nicht, dass sie existieren mussten.
+
+**Der Data Privacy Framework — und sein Ablaufdatum.**
+Im Juli 2023 verabschiedete die EU-Kommission den Angemessenheitsbeschluss
+zum EU-US Data Privacy Framework (DPF).<Ref id={5} /> Für zertifizierte
+US-Unternehmen — darunter Google, Microsoft, Salesforce, Slack —
+entfällt seither die TIA-Pflicht. Die Erleichterung ist real,
+aber vorläufig: Max Schrems hat das DPF bereits vor dem EuGH angefochten
+(Rechtssache T-554/23).<Ref id={5} /> Privacy Shield wurde 2020 zu Fall gebracht.
+Das Safe Harbor-Abkommen davor im Jahr 2015 (C-362/14). Das DPF
+ist strukturell ein Exekutivbeschluss der EU-Kommission — kein
+legislativer Rahmen, der gegen EuGH-Überprüfung stabil wäre.
+
+## Warum es diese Regelung gibt
+
+Art. 28 DSGVO adressiert ein reales Kontrollproblem: Wer
+personenbezogene Daten an Dritte übergibt, gibt auch die
+tatsächliche Herrschaft über diese Daten teilweise ab. Ohne
+vertragliche Bindung des Auftragsverarbeiters könnte dieser die
+Daten für eigene Zwecke nutzen, an Vierte weitergeben oder
+nachlässig schützen — ohne dass der eigentlich Verantwortliche
+davon erfährt oder dagegen vorgehen kann.
+
+Die Regelung entstammt dem Denken über klassische IT-Outsourcing-Verhältnisse:
+Ein Unternehmen lagert seinen Rechenzentrumsbetrieb aus. Ein Pharmaunternehmen
+übergibt die Gehaltsabrechnung an einen externen Payroll-Anbieter.
+Ein Versandhändler beauftragt ein Callcenter mit dem Kundendienst.
+In diesen Konstellationen ist ein individueller Vertrag sinnvoll —
+die Parteien sind auf Augenhöhe, der Vertrag kann die spezifische
+Verarbeitung konkret abbilden, und der Auftraggeber hat echte
+Einflussmöglichkeiten auf den Dienstleister.
+
+Die DSGVO-Systematik überträgt diese Logik unverändert auf
+die SaaS-Welt von 2018 und danach — ohne Proportionalitätsschwelle,
+ohne Sonderregel für Massenverträge, ohne Ausnahme für Kleinstbetriebe.
+Dass eine Bäckerei, die Bestellungen über eine Standardsoftware
+entgegennimmt, denselben formalen Anforderungen unterliegt wie ein
+Pharmaunternehmen, das Patientendaten an einen externen Labordienstleister
+übergibt, war keine bewusste Entscheidung des Gesetzgebers — es
+ist das Ergebnis einer Norm, die für einen anderen Kontext entworfen wurde.
+
+## Die Abwägung
+
+Das Problem ist nicht, dass Art. 28 DSGVO im Kern falsch ist. Das Problem
+ist die Differenzierungslosigkeit seiner Anwendung.
+
+**Der AVV als Schutzinstrument versagt im SaaS-Kontext.**
+Ein Auftragsverarbeitungsvertrag entfaltet Schutzwirkung, wenn der
+Verantwortliche tatsächlich Einfluss auf die Verarbeitungsbedingungen
+hat — wenn er verhandeln, ablehnen oder nachverhandeln kann. Bei
+Google Workspace, Slack oder Zoom hat kein Unternehmen unter
+einigen tausend Mitarbeitern diese Verhandlungsmacht. Der AVV
+ist ein Click-Through-Vertrag. Seine Prüfung ist eine Formalität
+ohne Substanz: Wer ihn nicht liest, hat dieselben Verarbeitungsbedingungen
+wie wer ihn liest. Der Schutz des Betroffenen hängt nicht davon ab,
+ob die Freelancerin in Köln den DPA von Mailchimp heruntergeladen hat.
+
+**Die Bußgelddrohung ist unverhältnismäßig — und in der Praxis irrelevant.**
+Art. 83 Abs. 4 DSGVO sieht für Art.-28-Verstöße Bußgelder bis
+zu €10 Millionen vor.<Ref id={3} /> In der Praxis fokussieren die
+Datenschutzbehörden auf schwerwiegende materielle Verstöße:
+Datenlecks, unrechtmäßige Weitergabe, fehlende Rechtsgrundlagen.
+AVV-spezifische Bußgelder gegen Kleinstunternehmen sind die Ausnahme.
+Das Ergebnis ist eine Compliance-Norm, deren Verletzung zwar theoretisch
+massiv sanktioniert werden könnte, aber in der Praxis toleriert wird —
+was weder Rechtssicherheit noch echten Datenschutz fördert.
+
+**Die Schweiz hat das Proportionalitätsproblem gelöst.**
+Das revidierte Schweizer DSG enthält eine explizite KMU-Ausnahme
+für das Bearbeitungsverzeichnis<Ref id={7} /> — Unternehmen unter
+250 Mitarbeitenden sind davon weitgehend befreit. Deutschland und
+die EU haben eine solche Schwelle für das Verarbeitungsverzeichnis
+ebenfalls (Art. 30 Abs. 5 DSGVO für unter 250 Mitarbeitende, mit Ausnahmen),
+aber für den AVV selbst gibt es keine analoge Erleichterung.
+
+**Solange das DPF rechtlich anfechtbar bleibt, ist die Grundlage instabil.**
+Das EU-US Data Privacy Framework<Ref id={5} /> hat die Lage für die
+meisten Unternehmen praktisch verbessert. Aber es ist das dritte
+EU-US-Datentransfer-Regime innerhalb von zwanzig Jahren — nach
+Safe Harbor (2000–2015) und Privacy Shield (2016–2020). Jedes wurde
+durch denselben Beschwerdeführer, in denselben Verfahren, auf derselben
+Grundlage zu Fall gebracht. Europäische Unternehmen, die US-SaaS-Tools
+nutzen, bauen auf einem Fundament, das bei jedem Urteil neu bewertet
+wird. Diese Unsicherheit ist kein unvermeidliches Naturphänomen —
+sie ist das Ergebnis eines legislativen Konstruktionsfehlers, der
+durch einen stabilen bilateralen Rechtsrahmen zwischen EU und USA
+behoben werden könnte.

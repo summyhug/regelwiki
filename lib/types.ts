@@ -6,7 +6,8 @@ export type Domain =
   | "unternehmen"
   | "arbeit-familie"
   | "arbeitgeber-pflichten"
-  | "einwanderung";
+  | "einwanderung"
+  | "datenschutz";
 export type Jurisdiction = "federal" | "state" | "municipal" | "district" | "mixed";
 export type AppliesIn = "all" | "partial";
 export type ReformStatus = "none" | "discussed" | "proposed" | "partial" | "enacted";
