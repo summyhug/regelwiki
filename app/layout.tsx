@@ -22,6 +22,11 @@ export default function RootLayout({
             <span className="text-sm text-stone-400 hidden sm:block">
               Deutsches Vorschriftenwesen — verständlich erklärt
             </span>
+            <div className="ml-auto flex items-baseline gap-5">
+              <a href="/about" className="text-sm text-stone-500 hover:text-stone-900 transition-colors">
+                Über
+              </a>
+            </div>
           </div>
         </header>
         <main className="mx-auto max-w-5xl px-6 py-10">{children}</main>
