@@ -12,6 +12,7 @@ export const DOMAINS: { slug: Domain; label: string }[] = [
   { slug: "unternehmen", label: "Unternehmen gründen & führen" },
   { slug: "arbeit-familie", label: "Arbeit & Familie" },
   { slug: "arbeitgeber-pflichten", label: "Arbeitgeberpflichten" },
+  { slug: "einwanderung", label: "Einwanderung & Anerkennung" },
 ];
 
 function parseCard(filePath: string, domain: Domain): Card {

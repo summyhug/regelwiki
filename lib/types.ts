@@ -5,7 +5,8 @@ export type Domain =
   | "alltagsbuerokratie"
   | "unternehmen"
   | "arbeit-familie"
-  | "arbeitgeber-pflichten";
+  | "arbeitgeber-pflichten"
+  | "einwanderung";
 export type Jurisdiction = "federal" | "state" | "municipal" | "district" | "mixed";
 export type AppliesIn = "all" | "partial";
 export type ReformStatus = "none" | "discussed" | "proposed" | "partial" | "enacted";
